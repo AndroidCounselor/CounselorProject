@@ -12,6 +12,7 @@ import android.widget.Toast;
  * Created by kimmoonsung on 2017. 5. 25..
  */
 
+// moonsung branch start
 public class Main extends Activity {
     ImageView Left,Right,Login_btn,Member_btn;
 
