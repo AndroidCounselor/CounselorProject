@@ -13,6 +13,7 @@ import android.widget.Toast;
  */
 
 // moonsung branch start
+    // check
 public class Main extends Activity {
     ImageView Left,Right,Login_btn,Member_btn;
 
