@@ -38,9 +38,10 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
+    ImageView moon1, moon2;
+     int i =0;
+
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
@@ -50,6 +51,43 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
         initSildeMenu();
 
+        moon1 = (ImageView) findViewById(R.id.moon1);
+        moon2 = (ImageView) findViewById(R.id.moon2);
+
+
+        moon1.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplication(), "a", Toast.LENGTH_SHORT).show();
+
+                if ( i == 0 ){
+
+                    moon1.setImageResource(R.drawable.moon2);
+                    i=1;
+                }
+                else{
+                    moon1.setImageResource(R.drawable.moon1);
+                    i=0;
+                }
+
+            }
+        });
+        moon2.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplication(), "v", Toast.LENGTH_SHORT).show();
+
+                if ( i == 0 ){
+                    moon2.setImageResource(R.drawable.moon1);
+                    i=1;
+                }
+                else{
+                    moon2.setImageResource(R.drawable.moon2);
+                    i=0;
+                }
+
+            }
+        });
 
     }
 
@@ -167,6 +205,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             case R.id.menu:         // 메뉴 이미지를 눌렀을때
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
                 break;
+
         }
     }
 }
