@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/group555"
+            android:layout_gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="36.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="284dp"
+                android:src="@drawable/leftshift"
+                android:layout_gravity="left"
+                android:id="@+id/fiveleft" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_height="51dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="19dp"
+                android:layout_marginLeft="28dp"
+                android:src="@drawable/invalid_name"
+                android:id="@+id/member_btn5" />
+
+
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_height="51dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="19dp"
+                android:src="@drawable/invalid_name2"
+                android:id="@+id/login_btn5" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
