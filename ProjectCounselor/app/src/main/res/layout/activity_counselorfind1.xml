@@ -73,12 +73,14 @@
                     />
 
 
-                <ImageView
+                <TextView
                     android:layout_width="290dp"
                     android:layout_height="47dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="72dp"
-                    android:src="@drawable/c"
+                    android:background="@drawable/c"
+                    android:text="고민 검색 및 드롭다운"
+                    android:textSize="16dp"
                     />
 
 
@@ -98,6 +100,16 @@
                     android:layout_marginTop="99dp"
                     android:id="@+id/counselordown"
                     android:src="@drawable/down"
+
+                    />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginTop="166dp"
+                    android:id="@+id/keyword1"
+                    android:src="@drawable/keyword"
 
                     />
 

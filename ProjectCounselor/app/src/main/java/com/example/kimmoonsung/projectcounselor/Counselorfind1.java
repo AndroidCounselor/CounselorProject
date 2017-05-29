@@ -2,6 +2,7 @@ package com.example.kimmoonsung.projectcounselor;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
@@ -34,7 +35,7 @@ public class Counselorfind1 extends Activity implements OnClickListener {
     private int leftMenuWidth;
     private static boolean isLeftExpanded;
     //  private Button bt_left;
-    ImageView findcounselor;
+    ImageView keyword1;
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     @Override
@@ -48,6 +49,19 @@ public class Counselorfind1 extends Activity implements OnClickListener {
         setContentView(R.layout.activity_counselorfind1);
 
         initSildeMenu();
+
+        keyword1 = (ImageView) findViewById(R.id.keyword1);
+
+        keyword1.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                Toast.makeText(getApplication(), "counselor1_2", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
+
     }
 
 
