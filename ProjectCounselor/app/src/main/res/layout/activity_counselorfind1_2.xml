@@ -246,7 +246,7 @@
                     android:layout_height="11dp"
                     android:layout_marginTop="387dp"
                     android:layout_marginLeft="291dp"
-                    android:id="@+id/counselorup"
+                    android:id="@+id/counselorup2"
                     android:src="@drawable/up"
 
                     />
@@ -255,7 +255,7 @@
                     android:layout_height="11dp"
                     android:layout_marginLeft="291dp"
                     android:layout_marginTop="404dp"
-                    android:id="@+id/counselordown"
+                    android:id="@+id/counselordown2"
                     android:src="@drawable/down"
 
                     />
