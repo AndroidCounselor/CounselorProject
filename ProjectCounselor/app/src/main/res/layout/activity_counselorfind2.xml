@@ -146,6 +146,7 @@
                     android:layout_marginLeft="97dp"
                     android:layout_marginTop="178dp"
                     android:src="@drawable/moon1"
+                    android:id="@+id/moon1"
 
                     />
 
@@ -239,8 +240,9 @@
                     android:layout_width="16dp"
                     android:layout_height="17dp"
                     android:layout_marginLeft="97dp"
-                    android:layout_marginTop="178dp"
+                    android:layout_marginTop="359dp"
                     android:src="@drawable/moon2"
+                    android:id="@+id/moon2"
 
                     />
 
@@ -292,7 +294,7 @@
                     android:layout_width="12dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="313dp"
-                    android:layout_marginTop="385dp"
+                    android:layout_marginTop="2dp"
                     android:src="@drawable/counso6"
 
                     />
