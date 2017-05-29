@@ -1,4 +1,5 @@
-package com.example.kimmoonsung.myapplication;
+package com.example.kimmoonsung.projectcounselor;
+
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,37 +14,27 @@ import android.widget.Toast;
  */
 
 // moonsung branch start
-    // check
-public class Main extends Activity {
-    ImageView Left,Right,Login_btn,Member_btn;
+// check
+public class Main1 extends Activity {
+    ImageView Right,Login_btn,Member_btn;
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
-        setContentView(R.layout.activity_firstmain);
+        setContentView(R.layout.activity_main_1);
 
-        Left = (ImageView)findViewById(R.id.oneleft);
         Right = (ImageView)findViewById(R.id.oneright);
-        Login_btn =(ImageView)findViewById(R.id.login_btn);
-        Member_btn =(ImageView)findViewById(R.id.member_btn);
+        Login_btn =(ImageView)findViewById(R.id.login_btn1);
+        Member_btn =(ImageView)findViewById(R.id.member_btn1);
 
-        Left.setOnClickListener(new View.OnClickListener() { //좌측이동
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), Main_5.class);
-                Toast.makeText(getApplication(), "five", Toast.LENGTH_SHORT).show();
-                startActivity(intent);
-            }
-        });
 
         Right.setOnClickListener(new View.OnClickListener() { // 우측 이동
             @Override
             public void onClick(View v) { // 우측이동
 
-                Intent intent = new Intent(getApplicationContext(), Main_2.class);
+                Intent intent = new Intent(getApplicationContext(), Main2.class);
                 Toast.makeText(getApplication(), "two", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
@@ -53,7 +44,7 @@ public class Main extends Activity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getApplicationContext(), login.class);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
                 Toast.makeText(getApplication(), "Login", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
