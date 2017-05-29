@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 /**
@@ -17,6 +18,7 @@ import android.widget.Toast;
 // check
 public class Main1 extends Activity {
     ImageView Right,Login_btn,Member_btn;
+
 
     @Override
 

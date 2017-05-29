@@ -7,22 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
-    ImageView Intentmain;
+    LinearLayout start2;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
         setContentView(R.layout.activity_main);
+        start2 = (LinearLayout) findViewById(R.id.start2);
 
-        Intentmain = (ImageView)findViewById(R.id.start);
-
-        Intentmain.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
+        start2.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
             @Override
             public void onClick(View v) {
 
@@ -31,7 +31,5 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
-
-
     }
 }
