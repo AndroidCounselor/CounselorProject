@@ -3,17 +3,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/group555"
+    android:layout_gravity="center"
     android:orientation="vertical">
     <FrameLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/group555"
-            android:layout_gravity="center"
-            />
+
 
 
         <LinearLayout

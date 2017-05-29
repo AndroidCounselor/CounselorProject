@@ -3,17 +3,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/group_9"
+    android:layout_gravity="center"
     android:orientation="vertical">
     <FrameLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
-
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/four"
-            android:layout_gravity="center"
-            />
 
 
         <LinearLayout
@@ -22,10 +17,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="300dp"
+                android:layout_width="22dp"
+                android:layout_height="36.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="284dp"
                 android:src="@drawable/leftshift"
                 android:layout_gravity="left"
                 android:id="@+id/fourleft" />
@@ -38,10 +33,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginTop="300dp"
+                android:layout_width="22dp"
+                android:layout_height="36.5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="284dp"
                 android:src="@drawable/rightshift"
                 android:layout_gravity="right"
                 android:id="@+id/fourright" />
