@@ -39,9 +39,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="0dp"
-            android:background="#eceaea"
+            android:background="@drawable/homebg"
             android:gravity="left"
             android:orientation="vertical" >
+
+
+
+
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -56,8 +60,37 @@
                     android:layout_marginTop="22dp"
                     android:src="@drawable/menu"
                     android:text="menu"
-                    android:background="#242426"
                     android:id="@+id/menu" />
+
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/m"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="131.6dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="385dp"
+                    android:src="@drawable/sim"
+
+                    />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="131.6dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="385dp"
+                    android:src="@drawable/user"
+
+                    />
+
 
                 <LinearLayout
                     android:id="@+id/ll_fragment"
@@ -74,11 +107,53 @@
                     />
 
 
-
             </FrameLayout>
 
 
         </LinearLayout>
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/home_1"
+                android:id="@+id/counselorfind"
+                />
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="123.2dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/home_2"
+                />
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="216dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/home_3"
+                />
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="303dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/home_4"
+                />
+
+
+
+
+
+
     </FrameLayout>
 
 </LinearLayout>

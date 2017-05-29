@@ -1,0 +1,181 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_menuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:textColor="#ff000000" >
+
+            <!-- include -->
+
+            <include
+                android:id="@+id/ic_leftslidemenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                layout="@layout/activity_slide" />
+        </LinearLayout>
+
+        <!-- slide layout -->
+
+        <LinearLayout
+            android:id="@+id/ll_mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/homebg"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/menu"
+                    android:text="menu"
+                    android:id="@+id/menu" />
+
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/findfind"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="72dp"
+                    android:background="@drawable/c"
+                    android:text="고민 검색 및 드롭다운"
+                    android:textSize="16dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="11dp"
+                    android:layout_marginTop="82dp"
+                    android:layout_marginLeft="291dp"
+                    android:id="@+id/counselorup"
+                    android:src="@drawable/up"
+
+                    />
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="11dp"
+                    android:layout_marginLeft="291dp"
+                    android:layout_marginTop="99dp"
+                    android:id="@+id/counselordown"
+                    android:src="@drawable/down"
+
+                    />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginTop="166dp"
+                    android:id="@+id/keyword1"
+                    android:src="@drawable/keyword"
+
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/home_1"
+            android:id="@+id/counselorfind"
+            />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="123.2dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/home_2"
+            />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="216dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/home_3"
+            />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="303dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/home_4"
+            />
+
+
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
