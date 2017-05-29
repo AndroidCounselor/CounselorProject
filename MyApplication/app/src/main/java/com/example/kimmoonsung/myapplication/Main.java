@@ -41,7 +41,7 @@ public class Main extends Activity {
 
         Right.setOnClickListener(new View.OnClickListener() { // 우측 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 우측이동
 
                 Intent intent = new Intent(getApplicationContext(), Main_2.class);
                 Toast.makeText(getApplication(), "two", Toast.LENGTH_SHORT).show();
@@ -61,7 +61,7 @@ public class Main extends Activity {
 
         Member_btn.setOnClickListener(new View.OnClickListener() { // 회원가입약관 페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { //이용약관으로 이동
 
                 Intent intent = new Intent(getApplicationContext(), Member_Agree.class);
                 Toast.makeText(getApplication(), "Memeber_Agree(이용약관 동의하기)", Toast.LENGTH_SHORT).show();

@@ -13,44 +13,44 @@
             android:src="@drawable/one"
             android:layout_gravity="center"
             />
-        
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="300dp"
-                    android:src="@drawable/left"
-                    android:layout_gravity="left"
-                    android:id="@+id/oneleft" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
 
-
-             </LinearLayout>
-             <LinearLayout
-                  android:layout_width="fill_parent"
-                  android:layout_height="fill_parent"
-                  android:orientation="vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginTop="300dp"
-                    android:src="@drawable/right"
-                    android:layout_gravity="right"
-                    android:id="@+id/oneright" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="300dp"
+                android:src="@drawable/leftshift"
+                android:layout_gravity="left"
+                android:id="@+id/oneleft" />
 
 
-             </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="300dp"
+                android:src="@drawable/rightshift"
+                android:layout_gravity="right"
+                android:id="@+id/oneright" />
 
 
+        </LinearLayout>
 
 
 
-            <LinearLayout
+
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="horizontal">
@@ -66,17 +66,17 @@
                 android:id="@+id/login_btn" />
 
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginBottom="50dp"
-                    android:src="@drawable/right"
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/right"
 
-                    android:id="@+id/member_btn" />
+                android:id="@+id/member_btn" />
 
-            </LinearLayout>
+        </LinearLayout>
 
 
     </FrameLayout>
