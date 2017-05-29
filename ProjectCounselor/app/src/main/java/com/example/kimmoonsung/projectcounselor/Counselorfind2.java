@@ -38,7 +38,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
-    ImageView moon1, moon2;
+    ImageView moon1, moon2; // 달 
      int i =0;
 
     @Override
@@ -51,6 +51,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
         initSildeMenu();
 
+        //// 달 -> 즐겨찾기 ////
         moon1 = (ImageView) findViewById(R.id.moon1);
         moon2 = (ImageView) findViewById(R.id.moon2);
 
@@ -88,6 +89,9 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
             }
         });
+
+
+        ////////
 
     }
 
