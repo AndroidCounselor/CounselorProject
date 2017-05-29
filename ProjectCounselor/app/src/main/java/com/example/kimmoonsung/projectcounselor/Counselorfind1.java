@@ -22,10 +22,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Created by kimmoonsung on 2017. 5. 28..
+ * Created by kimmoonsung on 2017. 5. 29..
  */
 
-public class Home extends Activity implements OnClickListener{
+public class Counselorfind1 extends Activity implements OnClickListener {
     /* slide menu */
     private DisplayMetrics metrics;
     private LinearLayout ll_mainLayout;
@@ -37,32 +37,20 @@ public class Home extends Activity implements OnClickListener{
     ImageView findcounselor;
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
-
     @Override
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, // 상태바없애기
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_counselorfind1);
 
         initSildeMenu();
-
-        findcounselor = (ImageView)findViewById(R.id.counselorfind);
-
-        findcounselor.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), Counselorfind1.class);
-                Toast.makeText(getApplication(), "findgogo", Toast.LENGTH_SHORT).show();
-                startActivity(intent);
-            }
-        });
-
-
     }
+
+
     private void initSildeMenu() {
 
         // init left menu width
@@ -120,7 +108,7 @@ public class Home extends Activity implements OnClickListener{
 
             findViewById(R.id.ll_empty).setEnabled(true);
             findViewById(R.id.ll_empty).setOnTouchListener(
-                    new OnTouchListener() {
+                    new View.OnTouchListener() {
 
                         @Override
                         public boolean onTouch(View arg0, MotionEvent arg1) {
@@ -178,5 +166,4 @@ public class Home extends Activity implements OnClickListener{
                 break;
         }
     }
-
 }

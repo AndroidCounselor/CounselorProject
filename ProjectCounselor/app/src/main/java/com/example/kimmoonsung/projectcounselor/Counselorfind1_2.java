@@ -6,10 +6,10 @@ import android.view.Window;
 import android.view.WindowManager;
 
 /**
- * Created by kimmoonsung on 2017. 5. 28..
+ * Created by kimmoonsung on 2017. 5. 29..
  */
 
-public class Member_Individual extends Activity{
+public class Counselorfind1_2 extends Activity{
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,6 @@ public class Member_Individual extends Activity{
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, // 상태바없애기
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_member_individual);
+        setContentView(R.layout.activity_counselorfind1_2);
     }
 }
