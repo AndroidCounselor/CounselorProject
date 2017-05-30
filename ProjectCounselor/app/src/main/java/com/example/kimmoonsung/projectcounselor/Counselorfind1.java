@@ -35,9 +35,10 @@ public class Counselorfind1 extends Activity implements OnClickListener {
     private int leftMenuWidth;
     private static boolean isLeftExpanded;
     //  private Button bt_left;
-    ImageView keyword1;
+    ImageView keyword1,s1;
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
+
     @Override
 
 
@@ -51,8 +52,10 @@ public class Counselorfind1 extends Activity implements OnClickListener {
         initSildeMenu();
 
         keyword1 = (ImageView) findViewById(R.id.keyword1);
+        s1 = (ImageView)findViewById(R.id.s1);
+        s1.setOnClickListener(this);
 
-        keyword1.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+        keyword1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -177,6 +180,14 @@ public class Counselorfind1 extends Activity implements OnClickListener {
         switch (v.getId()) {
             case R.id.menu:         // 메뉴 이미지를 눌렀을때
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
+                break;
+
+            case R.id.s1: // 나의 상담내역
+                Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
+                Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
+                        .show();
+                startActivity(intent);
+
                 break;
         }
     }
