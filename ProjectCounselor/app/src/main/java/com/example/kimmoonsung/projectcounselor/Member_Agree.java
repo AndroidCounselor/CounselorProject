@@ -14,7 +14,7 @@ import android.widget.Toast;
  */
 
 public class Member_Agree extends Activity {
-    ImageView MemberAgree_btn;
+    ImageView MemberAgree_btn , back;
 
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -25,6 +25,7 @@ public class Member_Agree extends Activity {
         setContentView(R.layout.activity_member_agree);
 
         MemberAgree_btn = (ImageView) findViewById(R.id.agree_btn);
+        back = (ImageView) findViewById(R.id.back);
 
         MemberAgree_btn.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
             @Override
@@ -32,6 +33,15 @@ public class Member_Agree extends Activity {
 
                 Intent intent = new Intent(getApplicationContext(), Member_Division.class);
                 Toast.makeText(getApplication(), "division", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() { // back 이동
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Main1.class);
+                Toast.makeText(getApplication(), "back", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });

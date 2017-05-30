@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ProjectCounselor</string>
+
+    <string-array name="work">
+        <item >주요경력</item>
+        <item >주요경력1</item>
+        <item >주요경력2</item>
+        <item >주요경력3</item>
+        <item >주요경력4</item>
+        <item >주요경력5</item>
+    </string-array>
+
 </resources>

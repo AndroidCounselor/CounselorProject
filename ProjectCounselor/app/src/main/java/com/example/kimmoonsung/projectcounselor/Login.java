@@ -14,7 +14,7 @@ import android.widget.Toast;
  */
 
 public class Login extends Activity {
-    ImageView Loginbutton;
+    ImageView Loginbutton , back;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class Login extends Activity {
         setContentView(R.layout.activity_login);
 
         Loginbutton = (ImageView) findViewById(R.id.login);
+        back = (ImageView) findViewById(R.id.back);
 
 
         Loginbutton.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
@@ -33,6 +34,16 @@ public class Login extends Activity {
 
                 Intent intent = new Intent(getApplicationContext(), Home.class);
                 Toast.makeText(getApplication(), "homego", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() { // back 이동
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Main1.class);
+                Toast.makeText(getApplication(), "back", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });
