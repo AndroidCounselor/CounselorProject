@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="0dp"
-            android:background="@drawable/homebg"
+            android:background="#ffffff"
             android:gravity="left"
             android:orientation="vertical" >
 
@@ -58,54 +58,16 @@
                     android:layout_height="20dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="22dp"
-                    android:src="@drawable/menu"
-                    android:text="menu"
+                    android:src="@drawable/menugray"
                     android:id="@+id/menu" />
 
 
                 <ImageView
-                    android:layout_width="88dp"
+                    android:layout_width="70dp"
                     android:layout_height="19dp"
                     android:layout_marginLeft="54dp"
                     android:layout_marginTop="22dp"
-                    android:src="@drawable/findfind"
-
-                    />
-
-                <ImageView
-                    android:layout_width="94dp"
-                    android:layout_height="47dp"
-                    android:layout_marginLeft="19dp"
-                    android:layout_marginTop="72dp"
-                    android:src="@drawable/se"
-
-                    />
-
-                <ImageView
-                    android:layout_width="63dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="33dp"
-                    android:layout_marginTop="86dp"
-                    android:src="@drawable/se_1"
-
-                    />
-
-
-                <ImageView
-                    android:layout_width="211dp"
-                    android:layout_height="47dp"
-                    android:layout_marginLeft="126dp"
-                    android:layout_marginTop="72dp"
-                    android:src="@drawable/se2"
-
-                    />
-
-                <ImageView
-                    android:layout_width="148dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="148dp"
-                    android:layout_marginTop="86dp"
-                    android:src="@drawable/se2_2"
+                    android:src="@drawable/reserve_title"
 
                     />
 
@@ -117,8 +79,8 @@
                     android:layout_width="318dp"
                     android:layout_height="162dp"
                     android:layout_marginLeft="19dp"
-                    android:layout_marginTop="141dp"
-                    android:src="@drawable/se3"
+                    android:layout_marginTop="82dp"
+                    android:src="@drawable/reserve_rec"
 
                     />
 
@@ -126,7 +88,7 @@
                     android:layout_width="40dp"
                     android:layout_height="10dp"
                     android:layout_marginLeft="38dp"
-                    android:layout_marginTop="161dp"
+                    android:layout_marginTop="102dp"
                     android:src="@drawable/start3"
 
                     />
@@ -135,7 +97,7 @@
                     android:layout_width="55dp"
                     android:layout_height="19dp"
                     android:layout_marginLeft="35dp"
-                    android:layout_marginTop="176dp"
+                    android:layout_marginTop="117dp"
                     android:src="@drawable/conselor_name"
 
                     />
@@ -144,7 +106,7 @@
                     android:layout_width="16dp"
                     android:layout_height="17dp"
                     android:layout_marginLeft="97dp"
-                    android:layout_marginTop="178dp"
+                    android:layout_marginTop="117dp"
                     android:src="@drawable/moon1"
                     android:id="@+id/moon1"
 
@@ -154,7 +116,7 @@
                     android:layout_width="57dp"
                     android:layout_height="16dp"
                     android:layout_marginLeft="36dp"
-                    android:layout_marginTop="210dp"
+                    android:layout_marginTop="151dp"
                     android:src="@drawable/counso"
 
                     />
@@ -163,7 +125,7 @@
                     android:layout_width="123dp"
                     android:layout_height="16dp"
                     android:layout_marginLeft="36dp"
-                    android:layout_marginTop="232dp"
+                    android:layout_marginTop="173dp"
                     android:src="@drawable/counso2"
 
                     />
@@ -171,7 +133,7 @@
                     android:layout_width="173dp"
                     android:layout_height="12dp"
                     android:layout_marginLeft="37dp"
-                    android:layout_marginTop="258dp"
+                    android:layout_marginTop="199dp"
                     android:src="@drawable/counso3"
 
                     />
@@ -179,29 +141,9 @@
                 <ImageView
                     android:layout_width="59dp"
                     android:layout_height="59dp"
-                    android:layout_marginLeft="243dp"
-                    android:layout_marginTop="178dp"
+                    android:layout_marginLeft="238dp"
+                    android:layout_marginTop="138dp"
                     android:src="@drawable/counso4"
-
-                    />
-
-                <ImageView
-                    android:layout_width="54dp"
-                    android:layout_height="18dp"
-                    android:layout_marginLeft="246dp"
-                    android:layout_marginTop="246dp"
-                    android:src="@drawable/counso5"
-                    android:id="@+id/counselor_reserve1"
-
-                    />
-
-                <ImageView
-                    android:layout_width="12dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="313dp"
-                    android:layout_marginTop="208dp"
-                    android:src="@drawable/counso6"
-                    android:id="@+id/counselor1"
 
                     />
 
@@ -213,93 +155,28 @@
 
                 <ImageView
                     android:layout_width="318dp"
-                    android:layout_height="162dp"
+                    android:layout_height="223dp"
                     android:layout_marginLeft="19dp"
-                    android:layout_marginTop="318dp"
-                    android:src="@drawable/se3"
+                    android:layout_marginTop="254dp"
+                    android:src="@drawable/reserve_rec2"
 
                     />
+
+                <!-- confrim button -->
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="10dp"
-                    android:layout_marginLeft="38dp"
-                    android:layout_marginTop="343dp"
-                    android:src="@drawable/star1"
+                    android:layout_width="163dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="506dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/reserve_confirm"
+                    android:id="@+id/reserve_confirm"
 
                     />
 
-                <ImageView
-                    android:layout_width="55dp"
-                    android:layout_height="19dp"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="358dp"
-                    android:src="@drawable/conselor_name"
 
-                    />
 
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="17dp"
-                    android:layout_marginLeft="97dp"
-                    android:layout_marginTop="359dp"
-                    android:src="@drawable/moon2"
-                    android:id="@+id/moon2"
 
-                    />
-
-                <ImageView
-                    android:layout_width="57dp"
-                    android:layout_height="16dp"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginTop="392dp"
-                    android:src="@drawable/counso"
-
-                    />
-
-                <ImageView
-                    android:layout_width="123dp"
-                    android:layout_height="16dp"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginTop="414dp"
-                    android:src="@drawable/counso2"
-
-                    />
-                <ImageView
-                    android:layout_width="173dp"
-                    android:layout_height="12dp"
-                    android:layout_marginLeft="37dp"
-                    android:layout_marginTop="442dp"
-                    android:src="@drawable/counso3"
-
-                    />
-
-                <ImageView
-                    android:layout_width="59dp"
-                    android:layout_height="59dp"
-                    android:layout_marginLeft="243dp"
-                    android:layout_marginTop="357dp"
-                    android:src="@drawable/counso4"
-
-                    />
-
-                <ImageView
-                    android:layout_width="54dp"
-                    android:layout_height="18dp"
-                    android:layout_marginLeft="246dp"
-                    android:layout_marginTop="428dp"
-                    android:src="@drawable/counso5"
-
-                    />
-
-                <ImageView
-                    android:layout_width="12dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="313dp"
-                    android:layout_marginTop="385dp"
-                    android:src="@drawable/counso6"
-
-                    />
 
 
 
