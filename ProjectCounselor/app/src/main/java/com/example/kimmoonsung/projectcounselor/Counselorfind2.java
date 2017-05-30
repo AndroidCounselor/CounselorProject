@@ -145,9 +145,6 @@ public class Counselorfind2 extends Activity implements OnClickListener {
         menu1.setOnClickListener(this); // 메뉴 눌렀을때  밑에 switch문 보셈
 
 
-
-
-
     }
 
     /**
@@ -228,6 +225,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             }
         }
     }
+
     @Override
     public void onClick(View v) {
 

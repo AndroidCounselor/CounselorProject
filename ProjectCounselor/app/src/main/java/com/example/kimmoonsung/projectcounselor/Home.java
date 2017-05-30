@@ -38,6 +38,7 @@ public class Home extends Activity implements OnClickListener{
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
 
+    ImageView s1; // slide ㅇㅣ미지
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,8 @@ public class Home extends Activity implements OnClickListener{
             }
         });
 
+        s1 = (ImageView) findViewById(R.id.s1);
+        s1.setOnClickListener(this);
 
     }
     private void initSildeMenu() {
@@ -176,7 +179,17 @@ public class Home extends Activity implements OnClickListener{
             case R.id.menu:         // 메뉴 이미지를 눌렀을때
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
                 break;
+
+            case R.id.s1: // 나의 상담내역
+                Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
+                Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
+                        .show();
+                startActivity(intent);
+
+                isLeftExpanded = false; // 홈 눌르면 왼쪽열려있는메뉴를 닫혀있는 상태로 바뀌어버리게 해줌 그래서 다시 뒤로 버튼 눌러서 돌아왔을때 메뉴 두번 눌러야 하는일없게 하는것
+                break;
         }
+
     }
 
 }

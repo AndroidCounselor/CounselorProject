@@ -15,7 +15,7 @@ import android.widget.Toast;
  */
 
 public class Member_Division extends Activity{
-    ImageView Individual,Counselor;
+    ImageView Individual,Counselor , back;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
@@ -25,6 +25,7 @@ public class Member_Division extends Activity{
 
         Individual = (ImageView) findViewById(R.id.individual);
         Counselor = (ImageView) findViewById(R.id.counselor);
+
 
         Individual.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
@@ -45,5 +46,9 @@ public class Member_Division extends Activity{
                 startActivity(intent);
             }
         });
+
+
+
+
     }
 }

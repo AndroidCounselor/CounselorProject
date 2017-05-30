@@ -172,6 +172,7 @@ public class Counselor_Reservation extends Activity implements OnClickListener {
             }
         }
     }
+
     @Override
     public void onClick(View v) {
 

@@ -29,6 +29,7 @@
     android:layout_height="50dp"
     android:layout_marginTop="22dp"
     android:src="@drawable/s_1"
+        android:id="@+id/s1"
     />
 
 
@@ -36,7 +37,7 @@
         android:layout_width="284dp"
         android:layout_height="50dp"
         android:layout_marginTop="29dp"
-        android:src="@drawable/s_3"
+        android:src="@drawable/s_2"
         />
 
 

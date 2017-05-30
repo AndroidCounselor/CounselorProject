@@ -66,14 +66,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-
-    <ImageView
-        android:layout_width="290dp"
-        android:layout_height="47dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="9dp"
-        android:src="@drawable/box"
-        />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="290dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/box" />
 
 
     <ImageView

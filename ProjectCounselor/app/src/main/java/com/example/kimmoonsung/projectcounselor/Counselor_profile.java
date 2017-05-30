@@ -146,6 +146,7 @@ public class Counselor_profile extends Activity implements OnClickListener {
      * @param viewGroup
      * @param enabled
      */
+
     public static void enableDisableViewGroup(ViewGroup viewGroup,
                                               boolean enabled) {
         int childCount = viewGroup.getChildCount();
