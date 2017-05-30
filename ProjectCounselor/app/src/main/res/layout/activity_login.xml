@@ -36,6 +36,7 @@
         android:layout_marginTop="97dp"
         android:layout_gravity="center"
         android:textSize="12dp"
+        android:id="@+id/login_id"
 
 
         />
@@ -49,6 +50,7 @@
         android:layout_marginTop="11dp"
         android:layout_gravity="center"
         android:textSize="12dp"
+        android:id="@+id/login_pw"
         />
     
     <ImageView

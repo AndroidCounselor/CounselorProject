@@ -25,7 +25,7 @@ public class Member_Division extends Activity{
 
         Individual = (ImageView) findViewById(R.id.individual);
         Counselor = (ImageView) findViewById(R.id.counselor);
-
+         back = (ImageView) findViewById(R.id.back);
 
         Individual.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
@@ -47,6 +47,15 @@ public class Member_Division extends Activity{
             }
         });
 
+        back.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Member_Agree.class);
+                Toast.makeText(getApplication(), "back", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
 
 
 
