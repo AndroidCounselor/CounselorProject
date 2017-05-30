@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="583dp"
     android:background="#d8d8d8"
     android:orientation="vertical"
     android:layout_marginTop="0dp"
@@ -56,24 +56,24 @@
 
     <ImageView
         android:layout_width="284dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="23dp"
         android:src="@drawable/s_5"
         />
 
     <ImageView
         android:layout_width="284dp"
-        android:layout_height="50dp"
+        android:layout_height="46dp"
         android:src="@drawable/s_6"
         />
     <ImageView
         android:layout_width="284dp"
-        android:layout_height="50dp"
+        android:layout_height="46dp"
         android:src="@drawable/s_7"
         />
     <ImageView
         android:layout_width="284dp"
-        android:layout_height="50dp"
+        android:layout_height="46dp"
         android:src="@drawable/s_8"
         />
 

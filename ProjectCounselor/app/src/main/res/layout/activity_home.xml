@@ -27,7 +27,7 @@
             <include
                 android:id="@+id/ic_leftslidemenu"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="583dp"
                 android:layout_marginTop="0dp"
                 layout="@layout/activity_slide" />
         </LinearLayout>
@@ -95,14 +95,14 @@
                 <LinearLayout
                     android:id="@+id/ll_fragment"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="583dp"
                     >
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/ll_empty"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="583dp"
                     android:background="@android:color/transparent"
                     />
 

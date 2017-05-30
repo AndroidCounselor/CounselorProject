@@ -38,7 +38,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
-    ImageView moon1, moon2; // 달
+    ImageView moon1, moon2, s1;
     ImageView Counselor1,Counselor_reserve1;
      int i =0;
 
@@ -55,6 +55,9 @@ public class Counselorfind2 extends Activity implements OnClickListener {
         //// 달 -> 즐겨찾기 ////
         moon1 = (ImageView) findViewById(R.id.moon1);
         moon2 = (ImageView) findViewById(R.id.moon2);
+
+        s1 = (ImageView) findViewById(R.id.s1);
+        s1.setOnClickListener(this);
 
         // 상담원 프로필
         Counselor1 = (ImageView) findViewById(R.id.counselor1);
@@ -234,6 +237,13 @@ public class Counselorfind2 extends Activity implements OnClickListener {
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
                 break;
 
+            case R.id.s1: // 나의 상담내역
+                Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
+                Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
+                        .show();
+                startActivity(intent);
+
+                break;
         }
     }
 }

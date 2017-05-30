@@ -185,8 +185,6 @@ public class Home extends Activity implements OnClickListener{
                 Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
                         .show();
                 startActivity(intent);
-
-                isLeftExpanded = false; // 홈 눌르면 왼쪽열려있는메뉴를 닫혀있는 상태로 바뀌어버리게 해줌 그래서 다시 뒤로 버튼 눌러서 돌아왔을때 메뉴 두번 눌러야 하는일없게 하는것
                 break;
         }
 
