@@ -32,6 +32,10 @@
         <activity android:name=".Counselorfind1"></activity>
         <activity android:name=".Counselorfind1_2"></activity>
         <activity android:name=".Counselorfind2"></activity>
+        <activity android:name=".Counselor_profile"></activity>
+        <activity android:name=".Counselor_Reservation"></activity>
+        <activity android:name=".MyCounselor_Schedual"></activity>
+
     </application>
 
 </manifest>

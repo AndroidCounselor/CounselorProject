@@ -22,11 +22,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/**
- * Created by kimmoonsung on 2017. 5. 29..
- */
 
-public class Counselorfind2 extends Activity implements OnClickListener {
+public class MyCounselor_Schedual extends Activity implements OnClickListener {
     /* slide menu */
     private DisplayMetrics metrics;
     private LinearLayout ll_mainLayout;
@@ -38,86 +35,34 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
-    ImageView moon1, moon2; // 달
-    ImageView Counselor1,Counselor_reserve1;
-     int i =0;
+    ImageView CounselorStart; // 상담시작 버튼
 
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, // 상태바없애기
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_counselorfind2);
+        setContentView(R.layout.activity_myschedual);
+
+        CounselorStart = (ImageView) findViewById(R.id.counselorstart);
+
+
+
+        CounselorStart.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) {
+
+                //Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                Toast.makeText(getApplication(), "Counselor_Start", Toast.LENGTH_SHORT).show();
+                //startActivity(intent);
+            }
+        });
 
         initSildeMenu();
 
-        //// 달 -> 즐겨찾기 ////
-        moon1 = (ImageView) findViewById(R.id.moon1);
-        moon2 = (ImageView) findViewById(R.id.moon2);
-
-        // 상담원 프로필
-        Counselor1 = (ImageView) findViewById(R.id.counselor1);
-
-        // 상담원 예약하기
-        Counselor_reserve1 = (ImageView) findViewById(R.id.counselor_reserve1);
-
-        moon1.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplication(), "a", Toast.LENGTH_SHORT).show();
-
-                if ( i == 0 ){
-
-                    moon1.setImageResource(R.drawable.moon2);
-                    i=1;
-                }
-                else{
-                    moon1.setImageResource(R.drawable.moon1);
-                    i=0;
-                }
-
-            }
-        });
-        moon2.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplication(), "v", Toast.LENGTH_SHORT).show();
-
-                if ( i == 0 ){
-                    moon2.setImageResource(R.drawable.moon1);
-                    i=1;
-                }
-                else{
-                    moon2.setImageResource(R.drawable.moon2);
-                    i=0;
-                }
-
-            }
-        });
-
-        Counselor1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), Counselor_profile.class);
-                Toast.makeText(getApplication(), "counselor Profile", Toast.LENGTH_SHORT).show();
-                startActivity(intent);
-            }
-        });
-
-        Counselor_reserve1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), Counselor_Reservation.class);
-                Toast.makeText(getApplication(), "counselor Reservation", Toast.LENGTH_SHORT).show();
-                startActivity(intent);
-            }
-        });
-
-
-        ////////
 
     }
 
@@ -235,7 +180,6 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             case R.id.menu:         // 메뉴 이미지를 눌렀을때
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
                 break;
-
         }
     }
 }
