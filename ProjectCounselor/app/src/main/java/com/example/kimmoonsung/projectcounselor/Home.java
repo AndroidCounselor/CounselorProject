@@ -39,6 +39,11 @@ public class Home extends Activity implements OnClickListener{
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
 
     ImageView s1; // slide ㅇㅣ미지
+
+    String Individual_Id="null";
+    String Individual_Nickname="null"; // 개인회원가입에서 받아옴
+
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +69,13 @@ public class Home extends Activity implements OnClickListener{
 
         s1 = (ImageView) findViewById(R.id.s1);
         s1.setOnClickListener(this);
+
+        Individual_Id= getIntent().getStringExtra("individual_id"); // 받아온 아이디
+        Individual_Nickname= getIntent().getStringExtra("individual_nickname"); //받아온 닉네임
+
+        Toast.makeText(getApplication(), Individual_Id +"// " + Individual_Nickname , Toast.LENGTH_SHORT).show();
+
+
 
     }
     private void initSildeMenu() {
@@ -179,13 +191,16 @@ public class Home extends Activity implements OnClickListener{
         switch (v.getId()) {
             case R.id.menu:         // 메뉴 이미지를 눌렀을때
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
+
                 break;
 
             case R.id.s1: // 나의 상담내역
-                Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
-                Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
-                        .show();
-                startActivity(intent);
+                if(isLeftExpanded==true) { // 메뉴열려있을시에만
+                    Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
+                    Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
+                            .show();
+                    startActivity(intent);
+                }
                 break;
         }
 

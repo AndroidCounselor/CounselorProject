@@ -173,11 +173,12 @@ public class Counselor_profile extends Activity implements OnClickListener {
                 break;
 
             case R.id.s1: // 나의 상담내역
-                Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
-                Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
-                        .show();
-                startActivity(intent);
-
+                if(isLeftExpanded==true) {// 메뉴열려있을시에만
+                    Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
+                    Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
+                            .show();
+                    startActivity(intent);
+                }
                 break;
 
         }

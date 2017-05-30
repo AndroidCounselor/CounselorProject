@@ -28,6 +28,7 @@ import android.widget.Toast;
  * Created by kimmoonsung on 2017. 5. 29..
  */
 
+
 public class Counselorfind1 extends Activity implements OnClickListener {
     /* slide menu */
     private DisplayMetrics metrics;
@@ -214,11 +215,12 @@ public class Counselorfind1 extends Activity implements OnClickListener {
                 break;
 
             case R.id.s1: // 나의 상담내역
-                Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
-                Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
-                        .show();
-                startActivity(intent);
-
+                if(isLeftExpanded==true) {// 메뉴열려있을시에만
+                    Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
+                    Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
+                            .show();
+                    startActivity(intent);
+                }
                 break;
         }
     }
