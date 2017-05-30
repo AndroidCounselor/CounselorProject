@@ -73,14 +73,13 @@
                     />
 
 
-                <TextView
+                <Spinner
+                    android:id="@+id/spinner"
                     android:layout_width="290dp"
                     android:layout_height="47dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="72dp"
                     android:background="@drawable/c"
-                    android:text="상담 분야"
-                    android:textSize="16dp"
                     />
 
 
@@ -230,14 +229,13 @@
 
 
 
-                <TextView
+                <Spinner
                     android:layout_width="290dp"
                     android:layout_height="47dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="377dp"
                     android:background="@drawable/c"
-                    android:text="상담 시간 선택"
-                    android:textSize="16dp"
+                    android:id="@+id/spinner2"
                     />
 
 

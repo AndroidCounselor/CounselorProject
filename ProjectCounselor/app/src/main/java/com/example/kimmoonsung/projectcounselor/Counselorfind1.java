@@ -16,9 +16,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
+import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,6 +53,30 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
         initSildeMenu();
 
+        //스피너
+        Spinner spinner;
+
+        spinner = (Spinner)findViewById(R.id.spinner); //고민검색
+
+
+
+        //어댑터 생성
+        //이 예제 같은 경우 string,xml에 리스트를 추가해 놓고 그 리스트를 불러온다.
+        ArrayAdapter adapter;
+
+        adapter = ArrayAdapter.createFromResource(this, R.array.consel_select, android.R.layout.simple_spinner_dropdown_item);
+
+
+        //스피너와 어댑터 연결
+        spinner.setAdapter(adapter);
+
+
+        //////////
+
+
+
+
+
         keyword1 = (ImageView) findViewById(R.id.keyword1);
         s1 = (ImageView)findViewById(R.id.s1);
         s1.setOnClickListener(this);
@@ -64,6 +90,11 @@ public class Counselorfind1 extends Activity implements OnClickListener {
                 startActivity(intent);
             }
         });
+
+
+
+
+
 
     }
 

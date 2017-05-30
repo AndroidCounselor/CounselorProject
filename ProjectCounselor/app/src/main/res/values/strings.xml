@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ProjectCounselor</string>
 
+    <!-- 주요경력 -->
     <string-array name="work">
         <item >주요경력</item>
         <item >주요경력1</item>
@@ -9,5 +10,75 @@
         <item >주요경력4</item>
         <item >주요경력5</item>
     </string-array>
+
+    <!-- 상담분야 -->
+    <string-array name="consel_select">
+        <item >상담분야</item>
+        <item >가족</item>
+        <item >취업</item>
+        <item >연애</item>
+        <item >공황</item>
+        <item >우울</item>
+        <item >부부관계</item>
+        <item >육아</item>
+        <item >불면</item>
+        <item >취업</item>
+        <item >무기력</item>
+        <item >강박증</item>
+        <item >트라우마</item>
+        <item >스트레스</item>
+        <item >애정결핍</item>
+        <item >도박</item>
+        <item >성</item>
+        <item >자신감</item>
+        <item >자</item>
+        <item >이성</item>
+        <item >대인관계</item>
+        <item >알코올</item>
+
+    </string-array>
+
+    <!-- 상담시간 선택 -->
+
+    <string-array name="conseltime_select">
+        <item >상담시간 선택</item>
+        <item >10:00 ~ 11:00</item>
+        <item >11:00 ~ 12:00</item>
+        <item >12:00 ~ 13:00</item>
+        <item >14:00 ~ 15:00</item>
+        <item >15:00 ~ 16:00</item>
+        <item >16:00 ~ 17:00</item>
+        <item >17:00 ~ 18:00</item>
+        <item >19:00 ~ 20:00</item>
+
+    </string-array>
+
+    <!-- 고민검색 -->
+    <string-array name="consel_select2">
+        <item >정렬 기준</item>
+        <item >가족 상담</item>
+        <item >취업 상담</item>
+        <item >연애 상담</item>
+        <item >공황 상담</item>
+        <item >우울 상담</item>
+        <item >부부관계 상담</item>
+        <item >육아 상담</item>
+        <item >불면 상담</item>
+        <item >취업 상담</item>
+        <item >무기력 상담</item>
+        <item >강박증 상담</item>
+        <item >트라우마 상담</item>
+        <item >스트레스 상담</item>
+        <item >애정결핍상담</item>
+        <item >도박 상담</item>
+        <item >성 상담</item>
+        <item >자신감 상담</item>
+        <item >이성 상담</item>
+        <item >대인관계 상담</item>
+        <item >알코올 상담</item>
+
+
+    </string-array>
+
 
 </resources>
