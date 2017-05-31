@@ -8,13 +8,24 @@
 
     >
 
-        <ImageView
-            android:layout_width="141dp"
-            android:layout_height="47dp"
-            android:layout_marginTop="56dp"
-            android:layout_marginLeft="32dp"
-            android:src="@drawable/hong"
-            />
+
+         <TextView
+             android:layout_width="141dp"
+             android:layout_height="27dp"
+             android:layout_marginTop="30dp"
+             android:layout_marginLeft="32dp"
+             android:id="@+id/slide_id"
+             android:textSize="20dp"
+             />
+
+        <TextView
+        android:layout_width="141dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:text="환영합니다"
+            android:textSize="20dp"
+        />
 
         <ImageView
         android:layout_width="72dp"

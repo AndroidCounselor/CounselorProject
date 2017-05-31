@@ -27,7 +27,7 @@
             <include
                 android:id="@+id/ic_leftslidemenu"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="583dp"
                 android:layout_marginTop="0dp"
                 layout="@layout/activity_slide" />
         </LinearLayout>
@@ -212,7 +212,7 @@
                     android:src="@drawable/counstart"
                     android:layout_marginLeft="287dp"
                     android:layout_marginTop="280dp"
-                    android:id="@+id/counselorstart"
+                    android:id="@+id/counselor_callstart"
                     />
 
                 <!-- -->

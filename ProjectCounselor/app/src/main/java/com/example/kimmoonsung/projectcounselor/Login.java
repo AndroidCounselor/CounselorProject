@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -15,7 +16,9 @@ import android.widget.Toast;
 
 public class Login extends Activity {
     ImageView Loginbutton , back;
+    EditText LoginId,LoginPw;
     @Override
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,14 +30,40 @@ public class Login extends Activity {
         Loginbutton = (ImageView) findViewById(R.id.login);
         back = (ImageView) findViewById(R.id.back);
 
+        // 로그인 Id, Password
+        LoginId = (EditText) findViewById(R.id.login_id);
+        LoginId.setPrivateImeOptions("defaultInputmode=english;");
+        LoginPw = (EditText) findViewById(R.id.login_pw);
+        LoginPw.setPrivateImeOptions("defaultInputmode=english;");
 
-        Loginbutton.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+
+
+        Loginbutton.setOnClickListener(new View.OnClickListener() { // 로그인
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getApplicationContext(), Home.class);
-                Toast.makeText(getApplication(), "homego", Toast.LENGTH_SHORT).show();
-                startActivity(intent);
+                String loginid = LoginId.getText().toString(); //
+                String loginpw = LoginPw.getText().toString();//
+
+                if(loginid.length()==0)
+                {
+                    Toast.makeText(getApplication(), "아이디 입력해주세요 ", Toast.LENGTH_SHORT).show();
+                }
+
+                else if(loginpw.length()==0){
+                    Toast.makeText(getApplication(), "비밀번호 입력해주세요 ", Toast.LENGTH_SHORT).show();
+                }
+
+                else {
+                    Intent intent = new Intent(getApplicationContext(), Home.class);
+
+
+                    intent.putExtra("loginid", loginid);//id넘겨준다
+
+
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
 

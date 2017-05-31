@@ -42,6 +42,10 @@ public class Counselorfind2 extends Activity implements OnClickListener {
     ImageView Counselor1,Counselor_reserve1;
      int i =0;
 
+    //
+    TextView Slide_Id;
+    MODEL model = MODEL.getInstance();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,6 +125,10 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
 
         ////////
+
+        Slide_Id = (TextView) findViewById(R.id.slide_id);
+        String id = model.getSlide_Id();
+        Slide_Id.setText(id+" 님");
 
     }
 
