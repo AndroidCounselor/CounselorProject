@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 public class Member_Division extends Activity{
     ImageView Individual,Counselor , back;
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
@@ -41,7 +43,7 @@ public class Member_Division extends Activity{
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getApplicationContext(), Member_Counselor.class);
+                Intent intent = new Intent(getApplicationContext(), Member_Counselor0.class);
                 Toast.makeText(getApplication(), "상담사Login", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
@@ -56,7 +58,6 @@ public class Member_Division extends Activity{
                 startActivity(intent);
             }
         });
-
 
 
     }

@@ -17,6 +17,9 @@ import android.widget.Toast;
 
 public class Member_Counselor extends Activity{
     ImageView Sign,Cancel,back;
+
+    String counselorid,counselornickname;
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,11 @@ public class Member_Counselor extends Activity{
         Cancel = (ImageView) findViewById(R.id.cancel);
         back = (ImageView) findViewById(R.id.back);
 
+        //Counselor0dㅔ서 받아옴
+
+        counselorid= getIntent().getStringExtra("counselor_id"); // 받아온 아이디
+        counselornickname= getIntent().getStringExtra("counselor_nickname"); //받아온 닉네임
+
 
 
         Sign.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
@@ -50,6 +58,9 @@ public class Member_Counselor extends Activity{
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(), Home.class);
+                intent.putExtra("counselor_id", counselorid);
+                intent.putExtra("counselor_nickname", counselornickname);
+
                 Toast.makeText(getApplication(), "가입완료", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
