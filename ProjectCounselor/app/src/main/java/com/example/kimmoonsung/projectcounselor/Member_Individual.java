@@ -36,10 +36,11 @@ public class Member_Individual extends Activity{
         individualid.setPrivateImeOptions("defaultInputmode=english;");
         Nickname = (EditText) findViewById(R.id.member_individual_nickname);
         Pw = (EditText) findViewById(R.id.member_individual_pw);
+        Pw.setPrivateImeOptions("defaultInputmode=english;");
         Pw2 = (EditText) findViewById(R.id.member_individual_pw2);
+        Pw2.setPrivateImeOptions("defaultInputmode=english;");
 
         Email = (EditText) findViewById(R.id.member_individual_email);
-
 
         back.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
@@ -103,7 +104,13 @@ public class Member_Individual extends Activity{
             }
         });
 
+
+
     }
 
+    public void onBackPressed() { //뒤로가는버튼막음
+        //  super.onBackPressed();
+        Toast.makeText(getApplication(),"뒤로 가시려면 상단에 뒤로가기 버튼을 클릭하십시오." , Toast.LENGTH_SHORT).show();     //스위치가 꺼졌을때
+    }
 
 }

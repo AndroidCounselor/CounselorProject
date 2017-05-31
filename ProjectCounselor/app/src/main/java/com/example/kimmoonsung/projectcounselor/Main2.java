@@ -68,4 +68,8 @@ public class Main2 extends Activity{
         });
     }
 
+    public void onBackPressed() { //뒤로가는버튼막음
+
+    }
+
 }

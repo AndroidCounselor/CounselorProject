@@ -40,9 +40,12 @@ public class Counselor_profile extends Activity implements OnClickListener {
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     ImageView s1;
 
+    //
+    TextView Slide_Id;
+    MODEL model = MODEL.getInstance();
+
+
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
@@ -53,6 +56,13 @@ public class Counselor_profile extends Activity implements OnClickListener {
         s1 = (ImageView) findViewById(R.id.s1);
         s1.setOnClickListener(this);
         initSildeMenu();
+
+
+        //
+
+        Slide_Id = (TextView) findViewById(R.id.slide_id);
+        String id = model.getSlide_Id();
+        Slide_Id.setText(id+" 님");
 
     }
 

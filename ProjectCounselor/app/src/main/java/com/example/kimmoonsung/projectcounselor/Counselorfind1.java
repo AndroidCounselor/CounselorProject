@@ -42,8 +42,11 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
 
-    @Override
+    TextView Slide_Id;
 
+    MODEL model = MODEL.getInstance();
+
+    @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +63,6 @@ public class Counselorfind1 extends Activity implements OnClickListener {
         spinner = (Spinner)findViewById(R.id.spinner); //고민검색
 
 
-
         //어댑터 생성
         //이 예제 같은 경우 string,xml에 리스트를 추가해 놓고 그 리스트를 불러온다.
         ArrayAdapter adapter;
@@ -73,10 +75,6 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
 
         //////////
-
-
-
-
 
         keyword1 = (ImageView) findViewById(R.id.keyword1);
         s1 = (ImageView)findViewById(R.id.s1);
@@ -92,10 +90,10 @@ public class Counselorfind1 extends Activity implements OnClickListener {
             }
         });
 
-
-
-
-
+        //
+        Slide_Id = (TextView) findViewById(R.id.slide_id);
+        String id = model.getSlide_Id();
+        Slide_Id.setText(id+" 님");
 
     }
 
@@ -121,9 +119,6 @@ public class Counselorfind1 extends Activity implements OnClickListener {
         menu1 = (ImageView) findViewById(R.id.menu);
 
         menu1.setOnClickListener(this); // 메뉴 눌렀을때  밑에 switch문 보셈
-
-
-
 
 
     }
@@ -206,6 +201,7 @@ public class Counselorfind1 extends Activity implements OnClickListener {
             }
         }
     }
+
     @Override
     public void onClick(View v) {
 

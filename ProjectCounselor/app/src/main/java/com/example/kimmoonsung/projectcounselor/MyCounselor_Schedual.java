@@ -37,9 +37,12 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     ImageView CounselorStart; // 상담시작 버튼
 
+
+    //
+    TextView Slide_Id;
+    MODEL model = MODEL.getInstance();
+
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
@@ -47,7 +50,7 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_myschedual);
 
-        CounselorStart = (ImageView) findViewById(R.id.counselorstart);
+        CounselorStart = (ImageView) findViewById(R.id.counselor_callstart);
 
 
 
@@ -56,12 +59,18 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
             public void onClick(View v) {
 
                 //Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                Toast.makeText(getApplication(), "Counselor_Start", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplication(), "Counselor_CallStart", Toast.LENGTH_SHORT).show();
                 //startActivity(intent);
             }
         });
 
         initSildeMenu();
+
+        //
+
+        Slide_Id = (TextView) findViewById(R.id.slide_id);
+        String id = model.getSlide_Id();
+        Slide_Id.setText(id+" 님");
 
 
     }

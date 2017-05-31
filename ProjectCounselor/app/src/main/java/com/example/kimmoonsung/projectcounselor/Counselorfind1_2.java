@@ -43,10 +43,10 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
 
     ImageView findbtn , s1;
 
+    TextView Slide_Id;
+    MODEL model = MODEL.getInstance();
+
     @Override
-
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
@@ -91,6 +91,12 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
                 startActivity(intent);
             }
         });
+
+
+        //
+        Slide_Id = (TextView) findViewById(R.id.slide_id);
+        String id = model.getSlide_Id();
+        Slide_Id.setText(id+" 님");
 
 
     }

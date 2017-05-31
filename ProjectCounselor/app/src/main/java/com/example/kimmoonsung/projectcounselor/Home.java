@@ -43,10 +43,17 @@ public class Home extends Activity implements OnClickListener{
     String Individual_Id="null";
     String Individual_Nickname="null"; // 개인회원가입에서 받아옴
 
+    String LoginId; // 로그인값 받아옴
+
+    TextView SlideId;
+
+    MODEL model = MODEL.getInstance();
+
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, // 상태바없애기
@@ -56,6 +63,7 @@ public class Home extends Activity implements OnClickListener{
         initSildeMenu();
 
         findcounselor = (ImageView)findViewById(R.id.counselorfind);
+
 
         findcounselor.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
@@ -70,14 +78,25 @@ public class Home extends Activity implements OnClickListener{
         s1 = (ImageView) findViewById(R.id.s1);
         s1.setOnClickListener(this);
 
+        /*
         Individual_Id= getIntent().getStringExtra("individual_id"); // 받아온 아이디
         Individual_Nickname= getIntent().getStringExtra("individual_nickname"); //받아온 닉네임
+        */
 
-        Toast.makeText(getApplication(), Individual_Id +"// " + Individual_Nickname , Toast.LENGTH_SHORT).show();
+        //
+        LoginId = getIntent().getStringExtra("loginid");
 
+        //
 
+        SlideId = (TextView) findViewById(R.id.slide_id);
+        SlideId.setText(LoginId +" 님");
+
+        model.setSlide_Id(LoginId);
+
+        Toast.makeText(getApplication(), model.getSlide_Id() +" 님 안녕하세요 ", Toast.LENGTH_SHORT).show();
 
     }
+
     private void initSildeMenu() {
 
         // init left menu width
@@ -100,10 +119,6 @@ public class Home extends Activity implements OnClickListener{
 
         menu1.setOnClickListener(this); // 메뉴 눌렀을때  밑에 switch문 보셈
 
-
-
-
-
     }
 
     /**
@@ -112,13 +127,9 @@ public class Home extends Activity implements OnClickListener{
     private void menuLeftSlideAnimationToggle() {
 
         if (!isLeftExpanded) { //슬라이딩이 열려있지 않다면
-
             isLeftExpanded = true; //true
 
-
             // OPEN
-
-
 
             new OpenAnimation(ll_mainLayout, leftMenuWidth,
                     Animation.RELATIVE_TO_SELF, 0.0f,
@@ -203,6 +214,10 @@ public class Home extends Activity implements OnClickListener{
                 }
                 break;
         }
+
+    }
+
+    public void onBackPressed() { //뒤로가는버튼막음
 
     }
 
