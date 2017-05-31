@@ -3,6 +3,7 @@ package com.example.kimmoonsung.projectcounselor;
 import android.app.Activity;
 import android.content.Intent;
 import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
@@ -58,9 +59,14 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
             @Override
             public void onClick(View v) {
 
+                String tel = "tel:01012345678";
+                //startActivity(new Intent("android.intent.action.CALL", Uri.parse(tel)));
+
                 //Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
                 Toast.makeText(getApplication(), "Counselor_CallStart", Toast.LENGTH_SHORT).show();
                 //startActivity(intent);
+
+                startActivity(new Intent("android.intent.action.DIAL", Uri.parse(tel)));
             }
         });
 

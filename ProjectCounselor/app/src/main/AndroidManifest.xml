@@ -18,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+        <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+
         <activity android:name=".Main1"></activity>
         <activity android:name=".Main2"></activity>
         <activity android:name=".Main3"></activity>
