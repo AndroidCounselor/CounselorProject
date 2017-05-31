@@ -99,9 +99,6 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
         menu1.setOnClickListener(this); // 메뉴 눌렀을때  밑에 switch문 보셈
 
 
-
-
-
     }
 
     /**

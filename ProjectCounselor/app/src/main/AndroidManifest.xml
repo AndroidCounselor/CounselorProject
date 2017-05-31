@@ -27,6 +27,7 @@
         <activity android:name=".Member_Agree"></activity>
         <activity android:name=".Member_Division"></activity>
         <activity android:name=".Member_Individual"></activity>
+        <activity android:name=".Member_Counselor0"></activity>
         <activity android:name=".Member_Counselor"></activity>
         <activity android:name=".Home"></activity>
         <activity android:name=".Counselorfind1"></activity>

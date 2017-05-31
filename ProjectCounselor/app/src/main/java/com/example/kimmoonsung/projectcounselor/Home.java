@@ -43,7 +43,16 @@ public class Home extends Activity implements OnClickListener{
     String Individual_Id="null";
     String Individual_Nickname="null"; // 개인회원가입에서 받아옴
 
-    String LoginId; // 로그인값 받아옴
+    //
+    String Counselor_Id;
+    String Counselor_Nickname; // 상담회원가입에서 받아옴
+
+    //
+    String Login_Id; // 로그인에서 받아옴
+    //
+    String TotalId; // 최종
+
+    ///////
 
     TextView SlideId;
 
@@ -78,22 +87,42 @@ public class Home extends Activity implements OnClickListener{
         s1 = (ImageView) findViewById(R.id.s1);
         s1.setOnClickListener(this);
 
-        /*
+
+        //////////////////////
+        //개인회원가입에서
         Individual_Id= getIntent().getStringExtra("individual_id"); // 받아온 아이디
         Individual_Nickname= getIntent().getStringExtra("individual_nickname"); //받아온 닉네임
-        */
 
-        //
-        LoginId = getIntent().getStringExtra("loginid");
+        //상담원회원가입에서
+        Counselor_Id= getIntent().getStringExtra("counselor_id"); // 받아온 상담원 아이디
+        Counselor_Nickname = getIntent().getStringExtra("counselor_nickname"); //받아온 닉네임
 
+        //로그인에서
+        Login_Id = getIntent().getStringExtra("loginid");
         //
+
+        if(Individual_Id!=null){
+            TotalId = Individual_Id;
+        }
+        else if(Counselor_Id!=null){
+            TotalId = Counselor_Id;
+        }
+        else{
+            TotalId = Login_Id;
+        }
+
+
+
 
         SlideId = (TextView) findViewById(R.id.slide_id);
-        SlideId.setText(LoginId +" 님");
+        SlideId.setText(TotalId +" 님");
 
-        model.setSlide_Id(LoginId);
+        model.setSlide_Id(TotalId);
 
         Toast.makeText(getApplication(), model.getSlide_Id() +" 님 안녕하세요 ", Toast.LENGTH_SHORT).show();
+
+
+        //////////////////////
 
     }
 
