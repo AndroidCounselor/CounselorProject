@@ -36,6 +36,7 @@ public class Member_Division extends Activity{
                 Intent intent = new Intent(getApplicationContext(), Member_Individual.class);
                 Toast.makeText(getApplication(), "개인Login", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -46,6 +47,7 @@ public class Member_Division extends Activity{
                 Intent intent = new Intent(getApplicationContext(), Member_Counselor0.class);
                 Toast.makeText(getApplication(), "상담사Login", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
             }
         });
 

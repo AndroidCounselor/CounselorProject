@@ -78,4 +78,9 @@ public class Login extends Activity {
         });
 
     }
+
+    public void onBackPressed() { //뒤로가는버튼막음
+        //  super.onBackPressed();
+        Toast.makeText(getApplication(),"뒤로 가시려면 상단에 뒤로가기 버튼을 클릭하십시오." , Toast.LENGTH_SHORT).show();
+    }
 }

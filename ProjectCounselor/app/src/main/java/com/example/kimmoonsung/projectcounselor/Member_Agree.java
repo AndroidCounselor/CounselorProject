@@ -34,6 +34,7 @@ public class Member_Agree extends Activity {
                 Intent intent = new Intent(getApplicationContext(), Member_Division.class);
                 Toast.makeText(getApplication(), "division", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
             }
         });
         back.setOnClickListener(new View.OnClickListener() { // back 이동

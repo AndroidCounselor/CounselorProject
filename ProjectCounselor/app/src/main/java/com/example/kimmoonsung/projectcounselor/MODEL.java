@@ -11,6 +11,7 @@ public class MODEL extends Activity{
     private static MODEL instance;
     private String Slide_Id; // 슬라이드메뉴 위한 변수
 
+
     public static MODEL getInstance(){
         if(instance==null){
             instance = new MODEL();

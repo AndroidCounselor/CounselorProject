@@ -63,6 +63,7 @@ public class Member_Counselor extends Activity{
 
                 Toast.makeText(getApplication(), "가입완료", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
             }
         });
 
