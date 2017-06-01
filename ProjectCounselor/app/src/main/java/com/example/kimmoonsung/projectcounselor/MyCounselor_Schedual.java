@@ -37,7 +37,7 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     ImageView CounselorStart; // 상담시작 버튼
-
+    ImageView myschedualhome;
 
     //
     TextView Slide_Id;
@@ -70,6 +70,7 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
             }
         });
 
+
         initSildeMenu();
 
         //
@@ -77,6 +78,21 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
         Slide_Id = (TextView) findViewById(R.id.slide_id);
         String id = model.getSlide_Id();
         Slide_Id.setText(id+" 님");
+
+
+
+
+        myschedualhome = (ImageView) findViewById(R.id.myschedual_home);
+        myschedualhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Home.class);
+                intent.putExtra("homeid", model.getSlide_Id());
+                startActivity(intent);
+            }
+        });
+
 
 
     }

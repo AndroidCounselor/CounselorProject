@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.CookieManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -41,18 +42,19 @@ public class Main1 extends Activity {
             public void onClick(View v) { // 우측이동
 
                 Intent intent = new Intent(getApplicationContext(), Main2.class);
-                Toast.makeText(getApplication(), "two", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
+
             }
         });
 
         Login_btn.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { //로그인이동
 
                 Intent intent = new Intent(getApplicationContext(), Login.class);
-                Toast.makeText(getApplication(), "Login", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -61,15 +63,14 @@ public class Main1 extends Activity {
             public void onClick(View v) { //이용약관으로 이동
 
                 Intent intent = new Intent(getApplicationContext(), Member_Agree.class);
-                Toast.makeText(getApplication(), "Memeber_Agree(이용약관 동의하기)", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
             }
         });
 
     }
 
-    public void onBackPressed() { //뒤로가는버튼막음
 
-    }
+
 
 }

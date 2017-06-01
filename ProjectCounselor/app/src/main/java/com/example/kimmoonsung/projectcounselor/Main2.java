@@ -34,8 +34,10 @@ public class Main2 extends Activity{
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(), Main1.class);
-                Toast.makeText(getApplication(), "one", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
+                finish();
+
             }
         });
         Right.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
@@ -43,8 +45,9 @@ public class Main2 extends Activity{
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(), Main3.class);
-                Toast.makeText(getApplication(), "three", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
+                finish();
             }
         });
         Login_btn.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
@@ -52,8 +55,10 @@ public class Main2 extends Activity{
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(), Login.class);
-                Toast.makeText(getApplication(), "Login", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
+                finish();
+
             }
         });
 
@@ -62,14 +67,11 @@ public class Main2 extends Activity{
             public void onClick(View v) { //이용약관으로 이동
 
                 Intent intent = new Intent(getApplicationContext(), Member_Agree.class);
-                Toast.makeText(getApplication(), "Memeber_Agree(이용약관 동의하기)", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
+
             }
         });
-    }
-
-    public void onBackPressed() { //뒤로가는버튼막음
-
     }
 
 }

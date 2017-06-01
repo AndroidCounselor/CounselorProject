@@ -50,6 +50,10 @@ public class Home extends Activity implements OnClickListener{
     //
     String Login_Id; // 로그인에서 받아옴
     //
+    //
+    String Home_Id; // 홈버튼에서 받아옴
+    //
+
     String TotalId; // 최종
 
     ///////
@@ -101,14 +105,23 @@ public class Home extends Activity implements OnClickListener{
         Login_Id = getIntent().getStringExtra("loginid");
         //
 
+        //home 버튼에서
+        Home_Id = getIntent().getStringExtra("homeid");
+        //
+
+
+
         if(Individual_Id!=null){
             TotalId = Individual_Id;
         }
         else if(Counselor_Id!=null){
             TotalId = Counselor_Id;
         }
-        else{
+        else if(Login_Id!=null){
             TotalId = Login_Id;
+        }
+        else{
+            TotalId = Home_Id;
         }
 
 
@@ -246,8 +259,10 @@ public class Home extends Activity implements OnClickListener{
 
     }
 
-    public void onBackPressed() { //뒤로가는버튼막음
+    @Override
+    public void onDestroy() { // 뒤로가기 눌렀을시 앱종료
+        super.onDestroy();
+        android.os.Process.killProcess(android.os.Process.myPid() );
 
     }
-
 }

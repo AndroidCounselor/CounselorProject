@@ -36,7 +36,7 @@ public class Counselor_Reservation extends Activity implements OnClickListener {
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     ImageView Reserve_Confirm; // 상담예약완료 버튼
-
+    ImageView reservehome;
     TextView Slide_Id;
     MODEL model = MODEL.getInstance();
 
@@ -49,6 +49,9 @@ public class Counselor_Reservation extends Activity implements OnClickListener {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, // 상태바없애기
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_counselor_reservation);
+
+
+        initSildeMenu();
 
         Reserve_Confirm = (ImageView) findViewById(R.id.reserve_confirm);
 
@@ -63,13 +66,27 @@ public class Counselor_Reservation extends Activity implements OnClickListener {
                 startActivity(intent);
             }
         });
-        initSildeMenu();
+
 
 
         //
         Slide_Id = (TextView) findViewById(R.id.slide_id);
         String id = model.getSlide_Id();
         Slide_Id.setText(id+" 님");
+
+
+
+
+        reservehome = (ImageView) findViewById(R.id.reservehome);
+        reservehome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Home.class);
+                intent.putExtra("homeid", model.getSlide_Id());
+                startActivity(intent);
+            }
+        });
 
 
 

@@ -38,9 +38,10 @@ public class Counselorfind1 extends Activity implements OnClickListener {
     private int leftMenuWidth;
     private static boolean isLeftExpanded;
     //  private Button bt_left;
-    ImageView keyword1,s1;
+    ImageView keyword1,s1,find1_home;
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
+
 
     TextView Slide_Id;
 
@@ -90,10 +91,27 @@ public class Counselorfind1 extends Activity implements OnClickListener {
             }
         });
 
+
         //
         Slide_Id = (TextView) findViewById(R.id.slide_id);
         String id = model.getSlide_Id();
         Slide_Id.setText(id+" 님");
+
+
+
+
+        find1_home = (ImageView) findViewById(R.id.find1_home);
+        find1_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Home.class);
+                intent.putExtra("homeid", model.getSlide_Id());
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 

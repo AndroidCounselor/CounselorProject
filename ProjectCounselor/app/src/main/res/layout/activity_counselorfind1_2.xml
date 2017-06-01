@@ -327,6 +327,7 @@
             android:layout_gravity="bottom"
             android:layout_marginBottom="10dp"
             android:src="@drawable/home_4"
+            android:id="@+id/find1_2_home"
             />
 
 
