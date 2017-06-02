@@ -63,13 +63,11 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
         spinner = (Spinner)findViewById(R.id.spinner); //고민검색
 
-
         //어댑터 생성
         //이 예제 같은 경우 string,xml에 리스트를 추가해 놓고 그 리스트를 불러온다.
         ArrayAdapter adapter;
 
         adapter = ArrayAdapter.createFromResource(this, R.array.consel_select, android.R.layout.simple_spinner_dropdown_item);
-
 
         //스피너와 어댑터 연결
         spinner.setAdapter(adapter);
@@ -83,10 +81,9 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
         keyword1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // keyword event
 
                 Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                Toast.makeText(getApplication(), "counselor1_2", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });
@@ -110,8 +107,6 @@ public class Counselorfind1 extends Activity implements OnClickListener {
                 startActivity(intent);
             }
         });
-
-
 
     }
 
@@ -138,7 +133,6 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
         menu1.setOnClickListener(this); // 메뉴 눌렀을때  밑에 switch문 보셈
 
-
     }
 
     /**
@@ -152,8 +146,6 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
 
             // OPEN
-
-
 
             new OpenAnimation(ll_mainLayout, leftMenuWidth,
                     Animation.RELATIVE_TO_SELF, 0.0f,
@@ -228,11 +220,10 @@ public class Counselorfind1 extends Activity implements OnClickListener {
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
                 break;
 
-            case R.id.s1: // 나의 상담내역
+            case R.id.s1: // 나의 상담내역으로
                 if(isLeftExpanded==true) {// 메뉴열려있을시에만
                     Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
-                    Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
-                            .show();
+
                     startActivity(intent);
                 }
                 break;

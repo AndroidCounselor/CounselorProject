@@ -38,7 +38,6 @@
             android:layout_marginTop="98dp"
             android:src="@drawable/a1"
 
-
             />
         <CheckBox
             android:layout_marginTop="95dp"
@@ -46,6 +45,7 @@
             android:layout_height="20dp"
             android:buttonTint="#000000"
             android:layout_marginLeft="95dp"
+            android:id="@+id/check1"
 
             />
     </LinearLayout>
@@ -69,6 +69,7 @@
             android:layout_height="20dp"
             android:buttonTint="#000000"
             android:layout_marginLeft="34dp"
+            android:id="@+id/check2"
 
             />
     </LinearLayout>
@@ -84,7 +85,6 @@
             android:layout_marginTop="48dp"
             android:src="@drawable/a3"
 
-
             />
         <CheckBox
             android:layout_marginTop="49dp"
@@ -92,6 +92,8 @@
             android:layout_height="20dp"
             android:layout_marginLeft="34dp"
             android:buttonTint="#000000"
+            android:id="@+id/check3"
+
             />
     </LinearLayout>
 
@@ -102,7 +104,6 @@
         android:layout_gravity="center"
         android:src="@drawable/agree_btn"
         android:id="@+id/agree_btn"
-
 
         />
 

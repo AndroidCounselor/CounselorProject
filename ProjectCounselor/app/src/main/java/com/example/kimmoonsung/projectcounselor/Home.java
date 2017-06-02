@@ -77,20 +77,18 @@ public class Home extends Activity implements OnClickListener{
 
         findcounselor = (ImageView)findViewById(R.id.counselorfind);
 
-
         findcounselor.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 상담사 찾기로
 
                 Intent intent = new Intent(getApplicationContext(), Counselorfind1.class);
-                Toast.makeText(getApplication(), "findgogo", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
             }
         });
 
         s1 = (ImageView) findViewById(R.id.s1);
         s1.setOnClickListener(this);
-
 
         //////////////////////
         //개인회원가입에서
@@ -123,8 +121,6 @@ public class Home extends Activity implements OnClickListener{
         else{
             TotalId = Home_Id;
         }
-
-
 
 
         SlideId = (TextView) findViewById(R.id.slide_id);
@@ -247,11 +243,9 @@ public class Home extends Activity implements OnClickListener{
 
                 break;
 
-            case R.id.s1: // 나의 상담내역
+            case R.id.s1: // 나의 상담내역으로
                 if(isLeftExpanded==true) { // 메뉴열려있을시에만
                     Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
-                    Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
-                            .show();
                     startActivity(intent);
                 }
                 break;

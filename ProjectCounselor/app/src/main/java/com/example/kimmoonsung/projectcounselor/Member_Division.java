@@ -31,10 +31,10 @@ public class Member_Division extends Activity{
 
         Individual.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 개인로그인
 
                 Intent intent = new Intent(getApplicationContext(), Member_Individual.class);
-                Toast.makeText(getApplication(), "개인Login", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
                 finish();
             }
@@ -42,10 +42,10 @@ public class Member_Division extends Activity{
 
         Counselor.setOnClickListener(new View.OnClickListener() { // 회원가입약관 페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 상담사 로그인
 
                 Intent intent = new Intent(getApplicationContext(), Member_Counselor0.class);
-                Toast.makeText(getApplication(), "상담사Login", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
                 finish();
             }
@@ -53,10 +53,10 @@ public class Member_Division extends Activity{
 
         back.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // back button
 
                 Intent intent = new Intent(getApplicationContext(), Member_Agree.class);
-                Toast.makeText(getApplication(), "back", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
             }
         });

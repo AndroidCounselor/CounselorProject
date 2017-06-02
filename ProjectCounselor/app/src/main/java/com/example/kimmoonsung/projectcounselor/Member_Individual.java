@@ -44,27 +44,29 @@ public class Member_Individual extends Activity{
 
         back.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // back button
 
                 Intent intent = new Intent(getApplicationContext(), Member_Division.class);
-                Toast.makeText(getApplication(), "back", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
 
             }
         });
         cancel.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { //cancel button
 
                 Intent intent = new Intent(getApplicationContext(), Member_Division.class);
-                Toast.makeText(getApplication(), "cancel", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
 
             }
         });
+
+
         sign.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 가입 완료
 
                 String id = individualid.getText().toString(); //
                 String nickname = Nickname.getText().toString();
@@ -92,7 +94,6 @@ public class Member_Individual extends Activity{
                 else {
 
                     Intent intent = new Intent(getApplicationContext(), Home.class);
-                    Toast.makeText(getApplication(), "가입완료 ", Toast.LENGTH_SHORT).show();
 
                     intent.putExtra("individual_id", id);
                     intent.putExtra("individual_nickname", nickname);

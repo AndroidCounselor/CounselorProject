@@ -84,10 +84,10 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
 
         findbtn.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 검색버튼
 
                 Intent intent = new Intent(getApplicationContext(), Counselorfind2.class);
-                Toast.makeText(getApplication(), "counselor2", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
             }
         });
@@ -233,8 +233,7 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
             case R.id.s1: // 나의 상담내역
                 if(isLeftExpanded==true) {// 메뉴열려있을시에만
                     Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
-                    Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
-                            .show();
+
                     startActivity(intent);
                 }
                 break;

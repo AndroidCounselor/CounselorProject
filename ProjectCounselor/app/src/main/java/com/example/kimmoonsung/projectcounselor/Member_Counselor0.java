@@ -44,20 +44,20 @@ public class Member_Counselor0 extends Activity{
 
         back.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // back button
 
                 Intent intent = new Intent(getApplicationContext(), Member_Division.class);
-                Toast.makeText(getApplication(), "back", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
 
             }
         });
         cancel.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {// cancel button
 
                 Intent intent = new Intent(getApplicationContext(), Member_Division.class);
-                Toast.makeText(getApplication(), "cancel", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
 
             }

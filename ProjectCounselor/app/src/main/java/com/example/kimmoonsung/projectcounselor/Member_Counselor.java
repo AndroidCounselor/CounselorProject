@@ -55,13 +55,13 @@ public class Member_Counselor extends Activity{
 
         Sign.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { //rㅏ입 완료
 
                 Intent intent = new Intent(getApplicationContext(), Home.class);
                 intent.putExtra("counselor_id", counselorid);
                 intent.putExtra("counselor_nickname", counselornickname);
 
-                Toast.makeText(getApplication(), "가입완료", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
                 finish();
             }
@@ -69,17 +69,17 @@ public class Member_Counselor extends Activity{
 
         Cancel.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { //cancel button
 
                 Intent intent = new Intent(getApplicationContext(), Member_Division.class);
-                Toast.makeText(getApplication(), "cancel", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
             }
         });
 
         back.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // back button
 
                 Intent intent = new Intent(getApplicationContext(), Member_Division.class);
                 startActivity(intent);

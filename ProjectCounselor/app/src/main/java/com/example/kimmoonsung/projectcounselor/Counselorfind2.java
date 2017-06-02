@@ -48,6 +48,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //타이틀바없애기
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, // 상태바없애기
@@ -72,57 +73,62 @@ public class Counselorfind2 extends Activity implements OnClickListener {
         moon1.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplication(), "a", Toast.LENGTH_SHORT).show();
 
-                if ( i == 0 ){
 
+                if( i == 0 ){
                     moon1.setImageResource(R.drawable.moon2);
+                    Toast.makeText(getApplication(), "즐겨찾기에 추가되었습니다.", Toast.LENGTH_SHORT).show();
                     i=1;
                 }
+
                 else{
                     moon1.setImageResource(R.drawable.moon1);
+                    Toast.makeText(getApplication(), "즐겨찾기가 해제되었습니다.", Toast.LENGTH_SHORT).show();
                     i=0;
                 }
 
             }
         });
+
         moon2.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplication(), "v", Toast.LENGTH_SHORT).show();
 
-                if ( i == 0 ){
+                if( i == 0 ){
                     moon2.setImageResource(R.drawable.moon1);
+                    Toast.makeText(getApplication(), "즐겨찾기가 해제되었습니다.", Toast.LENGTH_SHORT).show();
                     i=1;
                 }
+
                 else{
                     moon2.setImageResource(R.drawable.moon2);
+                    Toast.makeText(getApplication(), "즐겨찾기에 추가되었습니다.", Toast.LENGTH_SHORT).show();
                     i=0;
                 }
 
             }
         });
 
+
         Counselor1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // > button
 
                 Intent intent = new Intent(getApplicationContext(), Counselor_profile.class);
-                Toast.makeText(getApplication(), "counselor Profile", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
             }
         });
 
         Counselor_reserve1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // counselor Reservation button
 
                 Intent intent = new Intent(getApplicationContext(), Counselor_Reservation.class);
-                Toast.makeText(getApplication(), "counselor Reservation", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
             }
         });
-
 
         ////////
 
@@ -155,9 +161,11 @@ public class Counselorfind2 extends Activity implements OnClickListener {
         leftMenuWidth = (int) ((metrics.widthPixels) * 0.80);
 
         // init main view
+
         ll_mainLayout = (LinearLayout) findViewById(R.id.ll_mainlayout);
 
         // init left menu
+
         ll_menuLayout = (LinearLayout) findViewById(R.id.ll_menuLayout);
         leftMenuLayoutPrams = (FrameLayout.LayoutParams) ll_menuLayout
                 .getLayoutParams();
@@ -166,15 +174,14 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
         // init ui
         menu1 = (ImageView) findViewById(R.id.menu);
-
         menu1.setOnClickListener(this); // 메뉴 눌렀을때  밑에 switch문 보셈
-
 
     }
 
     /**
      * left menu toggle
      */
+
     private void menuLeftSlideAnimationToggle() {
 
         if (!isLeftExpanded) { //슬라이딩이 열려있지 않다면
@@ -183,8 +190,6 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
 
             // OPEN
-
-
 
             new OpenAnimation(ll_mainLayout, leftMenuWidth,
                     Animation.RELATIVE_TO_SELF, 0.0f,
@@ -210,7 +215,9 @@ public class Counselorfind2 extends Activity implements OnClickListener {
                         }
                     });
 
-        } else {
+
+        }
+        else {
             isLeftExpanded = false;
 
             // close
@@ -252,6 +259,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
     }
 
     @Override
+
     public void onClick(View v) {
 
         switch (v.getId()) {
@@ -262,8 +270,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             case R.id.s1: // 나의 상담내역
                 if(isLeftExpanded==true) {// 메뉴열려있을시에만
                     Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
-                    Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
-                            .show();
+
                     startActivity(intent);
                 }
                 break;
