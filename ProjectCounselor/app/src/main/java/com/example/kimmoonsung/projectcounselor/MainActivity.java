@@ -31,7 +31,6 @@ public class MainActivity extends Activity {
 
 
                 Intent intent = new Intent(getApplicationContext(), Main1.class);
-                Toast.makeText(getApplication(), "go", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 finish();
             }

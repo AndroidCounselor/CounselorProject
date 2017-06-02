@@ -59,10 +59,10 @@ public class Counselor_Reservation extends Activity implements OnClickListener {
 
         Reserve_Confirm.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 상담예약 완료 button - > schedual 로 이동 
 
                 Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
-                Toast.makeText(getApplication(), "Schedule", Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
             }
         });

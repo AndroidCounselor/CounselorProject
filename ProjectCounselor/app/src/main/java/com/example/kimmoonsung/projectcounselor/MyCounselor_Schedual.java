@@ -93,8 +93,6 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
             }
         });
 
-
-
     }
 
 
