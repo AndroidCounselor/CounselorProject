@@ -41,6 +41,7 @@
         <activity android:name=".Counselor_profile"></activity>
         <activity android:name=".Counselor_Reservation"></activity>
         <activity android:name=".MyCounselor_Schedual"></activity>
+        <activity android:name=".MyCounselor_Schedual0"></activity>
 
     </application>
 

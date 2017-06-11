@@ -27,8 +27,8 @@
             <include
                 android:id="@+id/ic_leftslidemenu"
                 android:layout_width="match_parent"
-                android:layout_height="583dp"
-                android:layout_marginTop="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="54dp"
                 layout="@layout/activity_slide" />
         </LinearLayout>
 
@@ -79,6 +79,7 @@
                     android:layout_height="47dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="72dp"
+                    android:paddingLeft="10dp"
                     android:background="@drawable/c"
                     />
 
@@ -235,7 +236,9 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="377dp"
                     android:background="@drawable/c"
+                    android:paddingLeft="10dp"
                     android:id="@+id/spinner2"
+
                     />
 
 
@@ -292,43 +295,68 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="29dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_gravity="bottom"
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:orientation="horizontal"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/home_1"
-            android:id="@+id/counselorfind"
-            />
 
-        <ImageView
-            android:layout_width="29dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="123.2dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/home_2"
-            />
+            >
 
-        <ImageView
-            android:layout_width="29dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="216dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/home_3"
-            />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                >
 
-        <ImageView
-            android:layout_width="29dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="303dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/home_4"
-            android:id="@+id/find1_2_home"
-            />
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/home_1"
+                    android:id="@+id/counselorfind"
+                    />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/home_2"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/home_3"
+                    android:id="@+id/go0"
+                    />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/home_4"
+                    android:id="@+id/find1_2_home"
+                    />
+
+            </FrameLayout>
+        </LinearLayout>
 
 
 

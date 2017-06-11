@@ -75,8 +75,25 @@ public class Counselor_profile extends Activity implements OnClickListener {
                 Intent intent = new Intent(getApplicationContext(), Home.class);
                 intent.putExtra("homeid", model.getSlide_Id());
                 startActivity(intent);
+
             }
         });
+
+        //
+        ImageView goschedual0; // 임시 캘린더로 넘어감
+        //임시 캘린더로 넘어감
+        goschedual0 = (ImageView) findViewById(R.id.go0);
+        goschedual0.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual0.class);
+
+                startActivity(intent);
+
+            }
+        });
+
 
 
 
@@ -88,7 +105,7 @@ public class Counselor_profile extends Activity implements OnClickListener {
         // init left menu width
         metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        leftMenuWidth = (int) ((metrics.widthPixels) * 0.80);
+        leftMenuWidth = (int) ((metrics.widthPixels) * 0.70);
 
         // init main view
         ll_mainLayout = (LinearLayout) findViewById(R.id.ll_mainlayout);
@@ -127,7 +144,7 @@ public class Counselor_profile extends Activity implements OnClickListener {
 
             new OpenAnimation(ll_mainLayout, leftMenuWidth,
                     Animation.RELATIVE_TO_SELF, 0.0f,
-                    Animation.RELATIVE_TO_SELF, 0.80f, 0, 0.0f, 0, 0.0f);
+                    Animation.RELATIVE_TO_SELF, 0.70f, 0, 0.0f, 0, 0.0f);
 
             // disable all of main view
             FrameLayout viewGroup = (FrameLayout) findViewById(R.id.ll_fragment)
@@ -154,7 +171,7 @@ public class Counselor_profile extends Activity implements OnClickListener {
 
             // close
             new CloseAnimation(ll_mainLayout, leftMenuWidth,
-                    TranslateAnimation.RELATIVE_TO_SELF, 0.80f,
+                    TranslateAnimation.RELATIVE_TO_SELF, 0.70f,
                     TranslateAnimation.RELATIVE_TO_SELF, 0.0f, 0, 0.0f, 0, 0.0f);
 
             // enable all of main view
@@ -204,6 +221,7 @@ public class Counselor_profile extends Activity implements OnClickListener {
                     Toast.makeText(getApplicationContext(), "나의상담내역으로", Toast.LENGTH_SHORT)
                             .show();
                     startActivity(intent);
+                    finish();
                 }
                 break;
 

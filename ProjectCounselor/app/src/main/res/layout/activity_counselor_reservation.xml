@@ -27,8 +27,8 @@
             <include
                 android:id="@+id/ic_leftslidemenu"
                 android:layout_width="match_parent"
-                android:layout_height="583dp"
-                android:layout_marginTop="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="54dp"
                 layout="@layout/activity_slide" />
         </LinearLayout>
 
@@ -75,77 +75,89 @@
 
                 <!-- 1 -->
 
+
                 <ImageView
                     android:layout_width="318dp"
                     android:layout_height="162dp"
-                    android:layout_marginLeft="19dp"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginTop="82dp"
                     android:src="@drawable/reserve_rec"
 
                     />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="10dp"
-                    android:layout_marginLeft="38dp"
-                    android:layout_marginTop="102dp"
-                    android:src="@drawable/start3"
+                <FrameLayout
+                    android:layout_width="318dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
 
-                    />
 
-                <ImageView
-                    android:layout_width="55dp"
-                    android:layout_height="19dp"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="117dp"
-                    android:src="@drawable/conselor_name"
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="102dp"
+                        android:src="@drawable/start3"
 
-                    />
+                        />
 
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="17dp"
-                    android:layout_marginLeft="97dp"
-                    android:layout_marginTop="117dp"
-                    android:src="@drawable/moon1"
-                    android:id="@+id/moon1"
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="117dp"
+                        android:src="@drawable/conselor_name"
 
-                    />
+                        />
 
-                <ImageView
-                    android:layout_width="57dp"
-                    android:layout_height="16dp"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginTop="151dp"
-                    android:src="@drawable/counso"
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="78dp"
+                        android:layout_marginTop="117dp"
+                        android:src="@drawable/moon1"
+                        android:id="@+id/moon1"
 
-                    />
+                        />
 
-                <ImageView
-                    android:layout_width="123dp"
-                    android:layout_height="16dp"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginTop="173dp"
-                    android:src="@drawable/counso2"
+                    <ImageView
+                        android:layout_width="57dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="151dp"
+                        android:src="@drawable/counso"
 
-                    />
-                <ImageView
-                    android:layout_width="173dp"
-                    android:layout_height="12dp"
-                    android:layout_marginLeft="37dp"
-                    android:layout_marginTop="199dp"
-                    android:src="@drawable/counso3"
+                        />
 
-                    />
+                    <ImageView
+                        android:layout_width="123dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="173dp"
+                        android:src="@drawable/counso2"
 
-                <ImageView
-                    android:layout_width="59dp"
-                    android:layout_height="59dp"
-                    android:layout_marginLeft="238dp"
-                    android:layout_marginTop="138dp"
-                    android:src="@drawable/counso4"
+                        />
+                    <ImageView
+                        android:layout_width="173dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="199dp"
+                        android:src="@drawable/counso3"
 
-                    />
+                        />
+
+                    <ImageView
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="138dp"
+                        android:src="@drawable/counso4"
+
+                        />
+
+
+                </FrameLayout>
+
 
 
 
@@ -156,7 +168,7 @@
                 <ImageView
                     android:layout_width="318dp"
                     android:layout_height="223dp"
-                    android:layout_marginLeft="19dp"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginTop="254dp"
                     android:src="@drawable/reserve_rec2"
 
@@ -167,8 +179,8 @@
                 <ImageView
                     android:layout_width="163dp"
                     android:layout_height="51dp"
-                    android:layout_marginTop="506dp"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="80dp"
+                    android:layout_gravity="center_horizontal|bottom"
                     android:src="@drawable/reserve_confirm"
                     android:id="@+id/reserve_confirm"
 
@@ -201,43 +213,68 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="29dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_gravity="bottom"
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:orientation="horizontal"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/home_1"
-            android:id="@+id/counselorfind"
-            />
 
-        <ImageView
-            android:layout_width="29dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="123.2dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/home_2"
-            />
+            >
 
-        <ImageView
-            android:layout_width="29dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="216dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/home_3"
-            />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                >
 
-        <ImageView
-            android:layout_width="29dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="303dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/home_4"
-            android:id="@+id/reservehome"
-            />
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/home_1"
+                    android:id="@+id/counselorfind"
+                    />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/home_2"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/home_3"
+                    android:id="@+id/go0"
+                    />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/home_4"
+                    android:id="@+id/reservehome"
+                    />
+
+            </FrameLayout>
+        </LinearLayout>
 
 
 
