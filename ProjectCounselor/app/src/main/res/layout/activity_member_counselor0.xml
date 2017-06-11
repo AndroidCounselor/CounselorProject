@@ -5,23 +5,28 @@
     android:layout_width="fill_parent" android:layout_height="fill_parent">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <ImageView
-            android:id="@+id/back"
-            android:layout_marginTop="11dp"
-            android:layout_marginLeft="16dp"
-            android:layout_width="10dp"
-            android:layout_height="17dp"
-            android:src="@drawable/back" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="106dp"
-            android:layout_width="96dp"
-            android:layout_height="27dp"
-            android:src="@drawable/page_1" />
+            <ImageView
+                android:id="@+id/back"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="10dp"
+                android:layout_height="17dp"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_width="96dp"
+                android:layout_height="33dp"
+                android:src="@drawable/page_1" />
+        </FrameLayout>
 
     </LinearLayout>
 
@@ -103,34 +108,31 @@
 
             />
 
-    </LinearLayout>
+        <FrameLayout
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ga"
+                />
 
 
+        </FrameLayout>
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="25dp"
-        android:src="@drawable/ga"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-
-        >
 
         <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="290dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center">
 
             <CheckBox
                 android:layout_marginTop="12dp"
                 android:layout_width="30dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="35dp"
                 android:buttonTint="#000000"
 
                 />
@@ -139,7 +141,7 @@
                 android:layout_marginTop="11dp"
                 android:layout_width="43dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="65dp"
+                android:layout_marginLeft="35dp"
                 android:src="@drawable/face"
                 />
 
@@ -147,7 +149,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_width="30dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="138dp"
+                android:layout_marginLeft="100dp"
                 android:buttonTint="#000000"
 
                 />
@@ -156,7 +158,7 @@
                 android:layout_marginTop="9dp"
                 android:layout_width="43dp"
                 android:layout_height="24dp"
-                android:layout_marginLeft="168dp"
+                android:layout_marginLeft="135dp"
                 android:src="@drawable/insta"
                 />
 
@@ -164,7 +166,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_width="30dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="248dp"
+                android:layout_marginLeft="200dp"
                 android:buttonTint="#000000"
 
                 />
@@ -173,95 +175,93 @@
                 android:layout_marginTop="9dp"
                 android:layout_width="43dp"
                 android:layout_height="24dp"
-                android:layout_marginLeft="278dp"
+                android:layout_marginLeft="235dp"
                 android:src="@drawable/naver"
                 />
 
         </FrameLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-
-        >
 
         <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="290dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center">
 
-            <CheckBox
-                android:layout_marginTop="12dp"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="35dp"
-                android:buttonTint="#000000"
+        <CheckBox
+            android:layout_marginTop="12dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:buttonTint="#000000"
 
-                />
+            />
 
-            <ImageView
-                android:layout_marginTop="11dp"
-                android:layout_width="31dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="65dp"
-                android:src="@drawable/cu"
-                />
+        <ImageView
+            android:layout_marginTop="11dp"
+            android:layout_width="31dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/cu"
+            />
 
-            <CheckBox
-                android:layout_marginTop="12dp"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="138dp"
-                android:buttonTint="#000000"
+        <CheckBox
+            android:layout_marginTop="12dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="100dp"
+            android:buttonTint="#000000"
 
-                />
+            />
 
-            <ImageView
-                android:layout_marginTop="14dp"
-                android:layout_width="31dp"
-                android:layout_height="12dp"
-                android:layout_marginLeft="164dp"
-                android:src="@drawable/gi"
-                />
-
-
+        <ImageView
+            android:layout_marginTop="14dp"
+            android:layout_width="31dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="135dp"
+            android:src="@drawable/gi"
+            />
 
         </FrameLayout>
+
+
     </LinearLayout>
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="19dp"
         >
 
         <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            >
             <ImageView
-                android:layout_marginBottom="19dp"
                 android:layout_width="144dp"
                 android:layout_height="51dp"
-                android:layout_marginLeft="28dp"
-                android:layout_gravity="bottom"
+                android:layout_marginLeft="30dp"
                 android:src="@drawable/sign"
-                android:id="@+id/sign"
-                />
+                android:id="@+id/sign" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            >
 
             <ImageView
-                android:layout_marginBottom="19dp"
-                android:layout_gravity="bottom"
                 android:layout_width="144dp"
                 android:layout_height="51dp"
-                android:layout_marginLeft="190dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
                 android:src="@drawable/cancel"
-                android:id="@+id/cancel"
-                />
+                android:id="@+id/cancel" />
 
         </FrameLayout>
     </LinearLayout>
