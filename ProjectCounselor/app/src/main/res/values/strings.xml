@@ -14,16 +14,26 @@
     <!-- 상담분야 -->
     <string-array name="consel_select">
         <item >상담분야</item>
-        <item >가족</item>
-        <item >취업</item>
-        <item >연애</item>
         <item >공황</item>
+        <item >가족</item>
+        <item >진로</item>
+        <item >연애</item>
+        <item >취업</item>
         <item >우울</item>
-        <item >부부관계</item>
-        <item >육아</item>
         <item >불면</item>
+        <item >외로움</item>
+        <item >육아</item>
+        <item >기타</item>
+        <item >부부관계</item>
+        <item >불쌍</item>
+        <item >실망</item>
+        <item >불면</item>
+        <item >성공</item>
+        <item >여행</item>
         <item >취업</item>
         <item >무기력</item>
+        <item >결혼</item>
+        <item >자취방</item>
         <item >강박증</item>
         <item >트라우마</item>
         <item >스트레스</item>
@@ -31,7 +41,6 @@
         <item >도박</item>
         <item >성</item>
         <item >자신감</item>
-        <item >자</item>
         <item >이성</item>
         <item >대인관계</item>
         <item >알코올</item>

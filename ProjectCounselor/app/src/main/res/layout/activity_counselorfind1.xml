@@ -100,21 +100,39 @@
 
                     />
 
+               <ScrollView
+                   android:layout_width="290dp"
+                   android:layout_height="400dp"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="130dp"
+                   android:scrollbarFadeDuration = "0"
+                   android:scrollbarAlwaysDrawVerticalTrack="true"
+
+                   android:scrollbarThumbVertical="@color/colorPrimary"
+                   android:scrollbarStyle="outsideInset"
+
+                   >
+
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       >
+
+                       <!-- 1111 -->
+
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="36dp"
+                           android:layout_marginLeft="5dp"
+                           android:id="@+id/keyword1"
+                           android:src="@drawable/keyword"
+
+                           />
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="36dp"
-                    android:layout_marginLeft="72dp"
-                    android:layout_marginTop="166dp"
-                    android:id="@+id/keyword1"
-                    android:src="@drawable/keyword"
-
-                    />
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="120dp"
-                    android:layout_marginTop="212dp"
+                    android:layout_gravity="center_horizontal"
                     android:id="@+id/keyword2"
                     android:src="@drawable/keyword2"
 
@@ -123,22 +141,80 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="36dp"
-                    android:layout_marginLeft="190dp"
-                    android:layout_marginTop="263dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
                     android:id="@+id/keyword3"
                     android:src="@drawable/keyword3"
 
                     />
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginTop="313dp"
-                    android:id="@+id/keyword4"
-                    android:src="@drawable/keyword4"
+                    <!-- 2222 -->
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="36dp"
+                           android:layout_marginTop="200dp"
+                           android:layout_marginLeft="5dp"
+                           android:src="@drawable/keyword"
 
-                    />
+                           />
+
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="36dp"
+                           android:layout_gravity="center_horizontal"
+                           android:layout_marginTop="200dp"
+                           android:src="@drawable/keyword2"
+
+                           />
+
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="36dp"
+                           android:layout_gravity="right"
+                           android:layout_marginRight="5dp"
+                           android:layout_marginTop="200dp"
+                           android:src="@drawable/keyword3"
+
+                           />
+
+
+
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="36dp"
+                           android:layout_marginTop="400dp"
+                           android:layout_marginLeft="5dp"
+                           android:src="@drawable/keyword"
+
+                           />
+
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="36dp"
+                           android:layout_gravity="center_horizontal"
+                           android:layout_marginTop="400dp"
+                           android:src="@drawable/keyword2"
+
+                           />
+
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="36dp"
+                           android:layout_gravity="right"
+                           android:layout_marginRight="5dp"
+                           android:layout_marginTop="400dp"
+                           android:src="@drawable/keyword3"
+
+                           />
+
+
+
+
+
+
+                   </FrameLayout>
+               </ScrollView>
+
 
                 <LinearLayout
                     android:id="@+id/ll_fragment"
