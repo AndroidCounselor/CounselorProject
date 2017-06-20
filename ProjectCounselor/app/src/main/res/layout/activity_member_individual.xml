@@ -131,9 +131,9 @@
             android:layout_gravity="center">
 
             <CheckBox
-                android:layout_marginTop="12dp"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
                 android:buttonTint="#000000"
 
                 />
@@ -147,9 +147,9 @@
                 />
 
             <CheckBox
-                android:layout_marginTop="12dp"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="100dp"
                 android:buttonTint="#000000"
 
@@ -164,9 +164,9 @@
                 />
 
             <CheckBox
-                android:layout_marginTop="12dp"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="200dp"
                 android:buttonTint="#000000"
 
@@ -188,9 +188,9 @@
             android:layout_gravity="center">
 
             <CheckBox
-                android:layout_marginTop="12dp"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
                 android:buttonTint="#000000"
 
                 />
@@ -204,9 +204,9 @@
                 />
 
             <CheckBox
-                android:layout_marginTop="12dp"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="100dp"
                 android:buttonTint="#000000"
 

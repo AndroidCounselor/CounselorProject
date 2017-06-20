@@ -7,6 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -78,8 +79,8 @@
 
         <CheckBox
             android:layout_marginTop="7dp"
-            android:layout_width="30dp"
-            android:layout_height="20dp"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
             android:buttonTint="#000000"
             android:id="@+id/idcheck"
             />
@@ -87,7 +88,7 @@
         <ImageView
             android:layout_marginTop="7dp"
             android:layout_width="74dp"
-            android:layout_height="20dp"
+            android:layout_height="33dp"
             android:layout_marginLeft="35dp"
             android:src="@drawable/remeberid"
             />
@@ -125,7 +126,6 @@
             android:layout_marginLeft="15dp"
             android:src="@drawable/findpw"
             />
-
 
     </LinearLayout>
 

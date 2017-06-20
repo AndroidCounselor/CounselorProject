@@ -109,7 +109,6 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             }
         });
 
-
         Counselor1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // > button
@@ -131,13 +130,11 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
             }
         });
-
         ////////
 
         Slide_Id = (TextView) findViewById(R.id.slide_id);
         String id = model.getSlide_Id();
         Slide_Id.setText(id+" 님");
-
 
 
         find2_home = (ImageView) findViewById(R.id.find2_home);
@@ -169,9 +166,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             }
         });
 
-
     }
-
 
     private void initSildeMenu() {
 
@@ -208,7 +203,6 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
             isLeftExpanded = true; //true
 
-
             // OPEN
 
             new OpenAnimation(ll_mainLayout, leftMenuWidth,
@@ -234,7 +228,6 @@ public class Counselorfind2 extends Activity implements OnClickListener {
                             return true;
                         }
                     });
-
 
         }
         else {
