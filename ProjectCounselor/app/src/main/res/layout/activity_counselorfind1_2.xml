@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="0dp"
-            android:background="@drawable/homebg"
+            android:background="#ffffff"
             android:gravity="left"
             android:orientation="vertical" >
 
@@ -52,13 +52,21 @@
                 android:layout_height="match_parent" >
 
 
+                <!-- top -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="41.8dp"
+                    android:background="#2f438e">
+
+                </LinearLayout>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="22dp"
-                    android:src="@drawable/menu"
+                    android:layout_marginTop="10.8dp"
+                    android:src="@drawable/menu1"
                     android:text="menu"
                     android:id="@+id/menu" />
 
@@ -67,11 +75,12 @@
                     android:layout_width="88dp"
                     android:layout_height="19dp"
                     android:layout_marginLeft="54dp"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="10.8dp"
                     android:src="@drawable/findfind"
 
                     />
 
+                <!-- top end -->
 
                 <Spinner
                     android:id="@+id/spinner"
@@ -108,16 +117,17 @@
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="92dp"
-                    android:buttonTint="#ffffff"
+                    android:buttonTint="#2f438e"
 
                     />
 
-                <ImageView
+                <TextView
                     android:layout_marginTop="173dp"
-                    android:layout_width="31dp"
-                    android:layout_height="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="126dp"
-                    android:src="@drawable/monday"
+                    android:text="월요일"
+                    android:textColor="#000000"
                     />
 
                 <CheckBox
@@ -125,19 +135,18 @@
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="207dp"
-                    android:buttonTint="#ffffff"
+                    android:buttonTint="#2f438e"
 
                     />
 
-                <ImageView
+                <TextView
                     android:layout_marginTop="173dp"
-                    android:layout_width="31dp"
-                    android:layout_height="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="241dp"
-                    android:src="@drawable/friday"
+                    android:text="금요일"
+                    android:textColor="#000000"
                     />
-
-
 
 
                 <CheckBox
@@ -145,16 +154,17 @@
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="92dp"
-                    android:buttonTint="#ffffff"
+                    android:buttonTint="#2f438e"
 
                     />
 
-                <ImageView
+                <TextView
                     android:layout_marginTop="201dp"
-                    android:layout_width="31dp"
-                    android:layout_height="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="126dp"
-                    android:src="@drawable/tuesday"
+                    android:text="화요일"
+                    android:textColor="#000000"
                     />
 
                 <CheckBox
@@ -162,16 +172,17 @@
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="207dp"
-                    android:buttonTint="#ffffff"
+                    android:buttonTint="#2f438e"
 
                     />
 
-                <ImageView
+                <TextView
                     android:layout_marginTop="201dp"
-                    android:layout_width="31dp"
-                    android:layout_height="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="241dp"
-                    android:src="@drawable/saturday"
+                    android:text="토요일"
+                    android:textColor="#000000"
                     />
 
 
@@ -180,16 +191,17 @@
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="92dp"
-                    android:buttonTint="#ffffff"
+                    android:buttonTint="#2f438e"
 
                     />
 
-                <ImageView
+                <TextView
                     android:layout_marginTop="230dp"
-                    android:layout_width="31dp"
-                    android:layout_height="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="126dp"
-                    android:src="@drawable/wendesday"
+                    android:text="수요일"
+                    android:textColor="#000000"
                     />
 
                 <CheckBox
@@ -197,16 +209,17 @@
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="207dp"
-                    android:buttonTint="#ffffff"
+                    android:buttonTint="#2f438e"
 
                     />
 
-                <ImageView
+                <TextView
                     android:layout_marginTop="230dp"
-                    android:layout_width="31dp"
-                    android:layout_height="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="241dp"
-                    android:src="@drawable/sunday"
+                    android:text="일요일"
+                    android:textColor="#000000"
                     />
 
 
@@ -215,16 +228,17 @@
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="92dp"
-                    android:buttonTint="#ffffff"
+                    android:buttonTint="#2f438e"
 
                     />
 
-                <ImageView
+                <TextView
                     android:layout_marginTop="259dp"
-                    android:layout_width="31dp"
-                    android:layout_height="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="126dp"
-                    android:src="@drawable/thursday"
+                    android:text="목요일"
+                    android:textColor="#000000"
                     />
 
 
@@ -289,18 +303,26 @@
                     android:background="@android:color/transparent"
                     />
 
-
             </FrameLayout>
 
 
         </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="56.5dp"
+            android:src="@drawable/bottomline"
+            />
+
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|left"
             android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="8.8dp"
 
             >
 
@@ -312,19 +334,19 @@
                 >
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="left"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="34.3dp"
                     android:src="@drawable/home_1"
                     android:id="@+id/counselorfind"
                     />
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="32dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="right"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="19.5dp"
                     android:src="@drawable/home_2"
                     />
 
@@ -338,19 +360,19 @@
                 >
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="left"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="19.5dp"
                     android:src="@drawable/home_3"
                     android:id="@+id/go0"
                     />
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="right"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="24.5dp"
                     android:src="@drawable/home_4"
                     android:id="@+id/find1_2_home"
                     />

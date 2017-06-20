@@ -106,12 +106,20 @@
 
         </LinearLayout>
 
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="56.5dp"
+            android:src="@drawable/bottomline"
+            />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|left"
             android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="8.8dp"
 
             >
 
@@ -123,19 +131,19 @@
                 >
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="left"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="34.3dp"
                     android:src="@drawable/home_1"
                     android:id="@+id/counselorfind"
                     />
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="32dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="right"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="19.5dp"
                     android:src="@drawable/home_2"
                     />
 
@@ -149,19 +157,19 @@
                 >
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="left"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="19.5dp"
                     android:src="@drawable/home_3"
                     android:id="@+id/go0"
                     />
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="right"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="24.5dp"
                     android:src="@drawable/home_4"
                     android:id="@+id/myschedual_home"
                     />

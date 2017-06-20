@@ -16,6 +16,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -57,7 +58,7 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
         initSildeMenu();
 
         //스피너
-        Spinner spinner,spinner2;
+        final Spinner spinner,spinner2;
 
                 spinner = (Spinner)findViewById(R.id.spinner); //상담분야선택
                 spinner2 = (Spinner)findViewById(R.id.spinner2);//상담시간선택
@@ -67,7 +68,7 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
         //이 예제 같은 경우 string,xml에 리스트를 추가해 놓고 그 리스트를 불러온다.
         ArrayAdapter adapter, adapter2;
 
-                adapter = ArrayAdapter.createFromResource(this, R.array.consel_select, android.R.layout.simple_spinner_dropdown_item);
+                adapter = ArrayAdapter.createFromResource(this, R.array.consel_select2, android.R.layout.simple_spinner_dropdown_item);
         adapter2 = ArrayAdapter.createFromResource(this, R.array.conseltime_select, android.R.layout.simple_spinner_dropdown_item);
 
         //스피너와 어댑터 연결
@@ -76,6 +77,28 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
 
         //////////
 
+         //스피너에 선택된값 변수에 저장
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+
+            public void onItemSelected(AdapterView<?> parent, View view,
+                                       int position, long id)
+            {
+                String str = (String) spinner.getSelectedItem();
+                if(!str.equals("상담 분야")) {
+                    //Toast.makeText(getApplicationContext(), parent.getItemAtPosition(position).toString() + "을 선택하셨습니다", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), str + "을 선택하셨습니다", Toast.LENGTH_SHORT).show();
+                    model.setSpinner_item(str);
+                }
+            }
+
+
+            public void onNothingSelected(AdapterView<?> arg0)
+            {
+
+            }
+        });
+        //
 
 
         findbtn = (ImageView) findViewById(R.id.findbtn); // 검색
@@ -94,13 +117,10 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
         });
 
 
-
         //
         Slide_Id = (TextView) findViewById(R.id.slide_id);
         String id = model.getSlide_Id();
         Slide_Id.setText(id+" 님");
-
-
 
 
         find1_2_home = (ImageView) findViewById(R.id.find1_2_home);

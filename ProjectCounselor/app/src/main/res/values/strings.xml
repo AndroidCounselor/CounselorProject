@@ -13,7 +13,7 @@
 
     <!-- 상담분야 -->
     <string-array name="consel_select">
-        <item >상담분야</item>
+        <item >고민검색 및 드롭다운</item>
         <item >공황</item>
         <item >가족</item>
         <item >진로</item>
@@ -64,7 +64,7 @@
 
     <!-- 고민검색 -->
     <string-array name="consel_select2">
-        <item >정렬 기준</item>
+        <item >상담 분야</item>
         <item >가족 상담</item>
         <item >취업 상담</item>
         <item >연애 상담</item>

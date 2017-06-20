@@ -43,7 +43,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
      int i =0;
 
     //
-    TextView Slide_Id;
+    TextView Slide_Id , TV2;
     MODEL model = MODEL.getInstance();
 
     @Override
@@ -151,6 +151,14 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
 
         //
+
+        TV2 = (TextView) findViewById(R.id.tv2);
+        String str2 = model.getSpinner_item();
+        TV2.setText(str2);
+
+
+
+
 
         ImageView goschedual0; // 임시 캘린더로 넘어감
         //임시 캘린더로 넘어감
