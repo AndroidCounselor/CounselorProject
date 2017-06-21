@@ -39,11 +39,11 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     ImageView moon1, moon2, s1 , find2_home;
-    ImageView Counselor1,Counselor_reserve1;
+    ImageView Counselor1,Counselor2,Counselor_reserve1,Counselor_reserve2;
      int i =0;
 
     //
-    TextView Slide_Id , TV2;
+    TextView Slide_Id ,TV, TV2;
     MODEL model = MODEL.getInstance();
 
     @Override
@@ -66,9 +66,11 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
         // 상담원 프로필
         Counselor1 = (ImageView) findViewById(R.id.counselor1);
+        Counselor2 = (ImageView) findViewById(R.id.counselor2);
 
         // 상담원 예약하기
         Counselor_reserve1 = (ImageView) findViewById(R.id.counselor_reserve1);
+        Counselor_reserve2 = (ImageView) findViewById(R.id.counselor_reserve2);
 
         moon1.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
             @Override
@@ -120,7 +122,29 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             }
         });
 
+        Counselor2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { // > button
+
+                Intent intent = new Intent(getApplicationContext(), Counselor_profile.class);
+
+                startActivity(intent);
+                finish();
+            }
+        });
+
         Counselor_reserve1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { // counselor Reservation button
+
+                Intent intent = new Intent(getApplicationContext(), Counselor_Reservation.class);
+
+                startActivity(intent);
+
+            }
+        });
+
+        Counselor_reserve2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // counselor Reservation button
 
@@ -154,7 +178,11 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
         TV2 = (TextView) findViewById(R.id.tv2);
         String str2 = model.getSpinner_item();
-        TV2.setText(str2);
+        TV2.setText(str2+" "+", 진로상담");
+
+        TV = (TextView ) findViewById(R.id.tv);
+        String str = model.getSpinner_item();
+        TV.setText(str);
 
 
 

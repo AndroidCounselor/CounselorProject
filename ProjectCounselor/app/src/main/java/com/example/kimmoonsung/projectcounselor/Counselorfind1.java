@@ -38,7 +38,9 @@ public class Counselorfind1 extends Activity implements OnClickListener {
     private int leftMenuWidth;
     private static boolean isLeftExpanded;
     //  private Button bt_left;
-    ImageView keyword1,s1,find1_home;
+    ImageView keyword1,keyword2,keyword3,keyword4,keyword5,keyword6,keyword7,
+              keyword8,keyword9,keyword10,keyword11,keyword12,keyword13,
+              s1,find1_home;
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
 
@@ -88,6 +90,32 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
             }
         });
+
+        keyword2 = (ImageView) findViewById(R.id.keyword2);
+        keyword2.setOnClickListener(this); // 밑에 switch문
+        keyword3 = (ImageView) findViewById(R.id.keyword3);
+        keyword3.setOnClickListener(this); // 밑에 switch문
+        keyword4 = (ImageView) findViewById(R.id.keyword4);
+        keyword4.setOnClickListener(this); // 밑에 switch문
+        keyword5 = (ImageView) findViewById(R.id.keyword5);
+        keyword5.setOnClickListener(this); // 밑에 switch문
+        keyword6 = (ImageView) findViewById(R.id.keyword6);
+        keyword6.setOnClickListener(this); // 밑에 switch문
+        keyword7 = (ImageView) findViewById(R.id.keyword7);
+        keyword7.setOnClickListener(this); // 밑에 switch문
+        keyword8 = (ImageView) findViewById(R.id.keyword8);
+        keyword8.setOnClickListener(this); // 밑에 switch문
+        keyword9 = (ImageView) findViewById(R.id.keyword9);
+        keyword9.setOnClickListener(this); // 밑에 switch문
+        keyword10 = (ImageView) findViewById(R.id.keyword10);
+        keyword10.setOnClickListener(this); // 밑에 switch문
+        keyword11 = (ImageView) findViewById(R.id.keyword11);
+        keyword11.setOnClickListener(this); // 밑에 switch문
+        keyword12 = (ImageView) findViewById(R.id.keyword12);
+        keyword12.setOnClickListener(this); // 밑에 switch문
+        keyword13 = (ImageView) findViewById(R.id.keyword13);
+        keyword13.setOnClickListener(this); // 밑에 switch문
+
 
 
         //
@@ -230,15 +258,63 @@ public class Counselorfind1 extends Activity implements OnClickListener {
     public void onClick(View v) {
 
         switch (v.getId()) {
+            case R.id.keyword2:
+                Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent);
+                break;
+            case R.id.keyword3:
+                Intent intent1 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent1);
+                break;
+            case R.id.keyword4:
+                Intent intent2 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent2);
+                break;
+            case R.id.keyword5:
+                Intent intent3 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent3);
+                break;
+            case R.id.keyword6:
+                Intent intent4 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent4);
+                break;
+            case R.id.keyword7:
+                Intent intent5 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent5);
+                break;
+            case R.id.keyword8:
+                Intent intent6 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent6);
+                break;
+            case R.id.keyword9:
+                Intent intent7 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent7);
+                break;
+            case R.id.keyword10:
+                Intent intent8 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent8);
+                break;
+            case R.id.keyword11:
+                Intent intent9 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent9);
+                break;
+            case R.id.keyword12:
+                Intent intent10 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent10);
+                break;
+            case R.id.keyword13:
+                Intent intent11 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+                startActivity(intent11);
+                break;
             case R.id.menu:         // 메뉴 이미지를 눌렀을때
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
                 break;
 
             case R.id.s1: // 나의 상담내역으로
                 if(isLeftExpanded==true) {// 메뉴열려있을시에만
-                    Intent intent = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
+                    Intent intent0 = new Intent(getApplicationContext(), MyCounselor_Schedual.class);
 
-                    startActivity(intent);
+                    startActivity(intent0);
                     finish();
                 }
                 break;

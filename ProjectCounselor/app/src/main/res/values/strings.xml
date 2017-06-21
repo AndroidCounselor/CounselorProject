@@ -65,26 +65,26 @@
     <!-- 고민검색 -->
     <string-array name="consel_select2">
         <item >상담 분야</item>
-        <item >가족 상담</item>
-        <item >취업 상담</item>
-        <item >연애 상담</item>
-        <item >공황 상담</item>
-        <item >우울 상담</item>
+        <item >가족상담</item>
+        <item >취업상담</item>
+        <item >연애상담</item>
+        <item >공황상담</item>
+        <item >우울상담</item>
         <item >부부관계 상담</item>
-        <item >육아 상담</item>
-        <item >불면 상담</item>
-        <item >취업 상담</item>
-        <item >무기력 상담</item>
-        <item >강박증 상담</item>
-        <item >트라우마 상담</item>
-        <item >스트레스 상담</item>
+        <item >육아상담</item>
+        <item >불면상담</item>
+        <item >취업상담</item>
+        <item >무기력상담</item>
+        <item >강박증상담</item>
+        <item >트라우마상담</item>
+        <item >스트레스상담</item>
         <item >애정결핍상담</item>
-        <item >도박 상담</item>
-        <item >성 상담</item>
-        <item >자신감 상담</item>
-        <item >이성 상담</item>
-        <item >대인관계 상담</item>
-        <item >알코올 상담</item>
+        <item >도박상담</item>
+        <item >성상담</item>
+        <item >자신감상담</item>
+        <item >이성상담</item>
+        <item >대인관계상담</item>
+        <item >알코올상담</item>
 
 
     </string-array>

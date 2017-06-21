@@ -90,7 +90,7 @@
                     android:layout_height="162dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="82dp"
-                    android:src="@drawable/reserve_rec"
+                    android:src="@drawable/se3"
 
                     />
 
