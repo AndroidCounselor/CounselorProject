@@ -21,6 +21,7 @@ import android.view.GestureDetector;
  */
 
 public class Main5 extends Activity implements OnGestureListener {
+
     ImageView Left,Login_btn,Member_btn;
 
     //////////////// swipe  /////////////////

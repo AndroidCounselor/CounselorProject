@@ -39,11 +39,11 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     ImageView moon1, moon2, s1 , find2_home;
-    ImageView Counselor1,Counselor_reserve1;
+    ImageView Counselor1,Counselor2,Counselor_reserve1,Counselor_reserve2;
      int i =0;
 
     //
-    TextView Slide_Id;
+    TextView Slide_Id ,TV, TV2;
     MODEL model = MODEL.getInstance();
 
     @Override
@@ -66,9 +66,11 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
         // 상담원 프로필
         Counselor1 = (ImageView) findViewById(R.id.counselor1);
+        Counselor2 = (ImageView) findViewById(R.id.counselor2);
 
         // 상담원 예약하기
         Counselor_reserve1 = (ImageView) findViewById(R.id.counselor_reserve1);
+        Counselor_reserve2 = (ImageView) findViewById(R.id.counselor_reserve2);
 
         moon1.setOnClickListener(new View.OnClickListener() { // 시작페이지로 이동
             @Override
@@ -109,8 +111,18 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             }
         });
 
-
         Counselor1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { // > button
+
+                Intent intent = new Intent(getApplicationContext(), Counselor_profile.class);
+
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        Counselor2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // > button
 
@@ -132,12 +144,21 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             }
         });
 
+        Counselor_reserve2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { // counselor Reservation button
+
+                Intent intent = new Intent(getApplicationContext(), Counselor_Reservation.class);
+
+                startActivity(intent);
+
+            }
+        });
         ////////
 
         Slide_Id = (TextView) findViewById(R.id.slide_id);
         String id = model.getSlide_Id();
         Slide_Id.setText(id+" 님");
-
 
 
         find2_home = (ImageView) findViewById(R.id.find2_home);
@@ -155,6 +176,18 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
         //
 
+        TV2 = (TextView) findViewById(R.id.tv2);
+        String str2 = model.getSpinner_item();
+        TV2.setText(str2+" "+", 진로상담");
+
+        TV = (TextView ) findViewById(R.id.tv);
+        String str = model.getSpinner_item();
+        TV.setText(str);
+
+
+
+
+
         ImageView goschedual0; // 임시 캘린더로 넘어감
         //임시 캘린더로 넘어감
         goschedual0 = (ImageView) findViewById(R.id.go0);
@@ -169,9 +202,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             }
         });
 
-
     }
-
 
     private void initSildeMenu() {
 
@@ -208,7 +239,6 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
             isLeftExpanded = true; //true
 
-
             // OPEN
 
             new OpenAnimation(ll_mainLayout, leftMenuWidth,
@@ -234,7 +264,6 @@ public class Counselorfind2 extends Activity implements OnClickListener {
                             return true;
                         }
                     });
-
 
         }
         else {

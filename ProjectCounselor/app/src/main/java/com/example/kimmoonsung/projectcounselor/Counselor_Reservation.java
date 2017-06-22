@@ -37,7 +37,7 @@ public class Counselor_Reservation extends Activity implements OnClickListener {
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     ImageView Reserve_Confirm; // 상담예약완료 버튼
     ImageView reservehome;
-    TextView Slide_Id;
+    TextView Slide_Id , tvtv;
     MODEL model = MODEL.getInstance();
 
     @Override
@@ -76,6 +76,11 @@ public class Counselor_Reservation extends Activity implements OnClickListener {
         Slide_Id.setText(id+" 님");
 
 
+        //
+
+        tvtv = (TextView) findViewById(R.id.tvtv);
+        String str = model.getSpinner_item();
+        tvtv.setText(str);
 
 
         reservehome = (ImageView) findViewById(R.id.reservehome);
@@ -105,6 +110,12 @@ public class Counselor_Reservation extends Activity implements OnClickListener {
 
             }
         });
+
+
+        //
+
+
+
 
 
     }

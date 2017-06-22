@@ -51,26 +51,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
+                <!-- top -->
 
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="41.8dp"
+                    android:background="#2f438e">
+
+                </LinearLayout>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="22dp"
-                    android:src="@drawable/menugray"
+                    android:layout_marginTop="10.8dp"
+                    android:src="@drawable/menu1"
+                    android:text="menu"
                     android:id="@+id/menu" />
 
 
                 <ImageView
-                    android:layout_width="70dp"
+                    android:layout_width="88dp"
                     android:layout_height="19dp"
                     android:layout_marginLeft="54dp"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="10.8dp"
                     android:src="@drawable/reserve_title"
 
                     />
 
+                <!-- top end -->
 
 
                 <!-- 1 -->
@@ -81,7 +90,7 @@
                     android:layout_height="162dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="82dp"
-                    android:src="@drawable/reserve_rec"
+                    android:src="@drawable/se3"
 
                     />
 
@@ -128,12 +137,14 @@
 
                         />
 
-                    <ImageView
+                    <TextView
                         android:layout_width="123dp"
-                        android:layout_height="16dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="17dp"
                         android:layout_marginTop="173dp"
-                        android:src="@drawable/counso2"
+                        android:textSize="16dp"
+                        android:id="@+id/tvtv"
+
 
                         />
                     <ImageView
@@ -188,11 +199,6 @@
 
 
 
-
-
-
-
-
                 <LinearLayout
                     android:id="@+id/ll_fragment"
                     android:layout_width="wrap_content"
@@ -213,12 +219,20 @@
 
         </LinearLayout>
 
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="56.5dp"
+            android:src="@drawable/bottomline"
+            />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|left"
             android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="8.8dp"
 
             >
 
@@ -230,19 +244,19 @@
                 >
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="left"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="34.3dp"
                     android:src="@drawable/home_1"
                     android:id="@+id/counselorfind"
                     />
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="32dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="right"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="19.5dp"
                     android:src="@drawable/home_2"
                     />
 
@@ -256,19 +270,19 @@
                 >
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="left"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="19.5dp"
                     android:src="@drawable/home_3"
                     android:id="@+id/go0"
                     />
 
                 <ImageView
-                    android:layout_width="29dp"
-                    android:layout_height="30dp"
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="right"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="24.5dp"
                     android:src="@drawable/home_4"
                     android:id="@+id/reservehome"
                     />
