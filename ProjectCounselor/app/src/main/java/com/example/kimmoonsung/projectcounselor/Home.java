@@ -34,7 +34,7 @@ public class Home extends Activity implements OnClickListener{
     private int leftMenuWidth;
     private static boolean isLeftExpanded;
     //  private Button bt_left;
-    ImageView findcounselor;
+
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
 
@@ -75,6 +75,8 @@ public class Home extends Activity implements OnClickListener{
 
         initSildeMenu();
 
+
+        ImageView findcounselor;
         findcounselor = (ImageView)findViewById(R.id.counselorfind);
 
         findcounselor.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
@@ -137,7 +139,17 @@ public class Home extends Activity implements OnClickListener{
         //////////////////////
 
 
+        ImageView go; // find1_2로넘어감 ( 상담예약 )
+        go = (ImageView) findViewById(R.id.gofind1_2);
+        go.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
+
+                startActivity(intent);
+            }
+        });
 
         ImageView goschedual0; // 임시 캘린더로 넘어감
         //임시 캘린더로 넘어감
@@ -151,6 +163,8 @@ public class Home extends Activity implements OnClickListener{
                 startActivity(intent);
             }
         });
+
+
 
 
     }

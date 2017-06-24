@@ -136,6 +136,18 @@ public class Counselorfind1_2 extends Activity implements OnClickListener {
         });
 
         //
+        ImageView findcounselor;
+        findcounselor = (ImageView)findViewById(R.id.counselorfind);
+
+        findcounselor.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) { // 상담사 찾기로
+
+                Intent intent = new Intent(getApplicationContext(), Counselorfind1.class);
+
+                startActivity(intent);
+            }
+        });
 
 
         ImageView goschedual0; // 임시 캘린더로 넘어감

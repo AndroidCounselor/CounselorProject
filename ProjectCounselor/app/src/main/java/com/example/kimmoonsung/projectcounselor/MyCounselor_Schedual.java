@@ -84,6 +84,35 @@ public class MyCounselor_Schedual extends Activity implements OnClickListener {
             }
         });
 
+        //
+
+
+        ImageView go; // find1_2로넘어감 ( 상담예약 )
+        go = (ImageView) findViewById(R.id.gofind1_2);
+        go.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) {
+
+                Intent intent11 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+
+                startActivity(intent11);
+            }
+        });
+//
+        ImageView findcounselor;
+        findcounselor = (ImageView)findViewById(R.id.counselorfind);
+
+        findcounselor.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) { // 상담사 찾기로
+
+                Intent intent = new Intent(getApplicationContext(), Counselorfind1.class);
+
+                startActivity(intent);
+            }
+        });
+
+
 
         initSildeMenu();
 

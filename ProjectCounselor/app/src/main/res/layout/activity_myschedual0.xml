@@ -144,6 +144,7 @@
                     android:layout_gravity="right"
                     android:layout_marginRight="19.5dp"
                     android:src="@drawable/home_2"
+                    android:id="@+id/gofind1_2"
                     />
 
             </FrameLayout>
