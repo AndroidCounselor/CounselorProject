@@ -39,11 +39,12 @@ public class Counselorfind1 extends Activity implements OnClickListener {
     private static boolean isLeftExpanded;
     //  private Button bt_left;
     ImageView keyword1,keyword2,keyword3,keyword4,keyword5,keyword6,keyword7,
-              keyword8,keyword9,keyword10,keyword11,keyword12,keyword13,
-              s1,find1_home;
+              keyword8,keyword9,keyword10,keyword11,keyword12,keyword13,keyword14,keyword15,keyword16,keyword17,keyword18,
+              s1,find1_home , find1btn;
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
 
+    int i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14,i15,i16,i17,i18;
 
     TextView Slide_Id;
 
@@ -84,12 +85,21 @@ public class Counselorfind1 extends Activity implements OnClickListener {
             @Override
             public void onClick(View v) { // keyword event
 
-                Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
-
-                startActivity(intent);
+                if( i1 == 0 ){
+                    keyword1.setImageResource(R.drawable.keyword_);
+                    i1=1;
+                }
+                else{
+                    keyword1.setImageResource(R.drawable.keyword);
+                    i1=0;
+                }
 
             }
         });
+
+
+        find1btn = (ImageView) findViewById(R.id.find1btn);
+        find1btn.setOnClickListener(this); // 밑에 switch문
 
         keyword2 = (ImageView) findViewById(R.id.keyword2);
         keyword2.setOnClickListener(this); // 밑에 switch문
@@ -115,6 +125,16 @@ public class Counselorfind1 extends Activity implements OnClickListener {
         keyword12.setOnClickListener(this); // 밑에 switch문
         keyword13 = (ImageView) findViewById(R.id.keyword13);
         keyword13.setOnClickListener(this); // 밑에 switch문
+        keyword14 = (ImageView) findViewById(R.id.keyword14);
+        keyword14.setOnClickListener(this); // 밑에 switch문
+        keyword15 = (ImageView) findViewById(R.id.keyword15);
+        keyword15.setOnClickListener(this); // 밑에 switch문
+        keyword16 = (ImageView) findViewById(R.id.keyword16);
+        keyword16.setOnClickListener(this); // 밑에 switch문
+        keyword17 = (ImageView) findViewById(R.id.keyword17);
+        keyword17.setOnClickListener(this); // 밑에 switch문
+        keyword18 = (ImageView) findViewById(R.id.keyword18);
+        keyword18.setOnClickListener(this); // 밑에 switch문
 
 
 
@@ -137,6 +157,18 @@ public class Counselorfind1 extends Activity implements OnClickListener {
         });
 
 
+
+        ImageView go; // find1_2로넘어감 ( 상담예약 )
+        go = (ImageView) findViewById(R.id.gofind1_2);
+        go.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
+
+                startActivity(intent);
+            }
+        });
         //
 
         ImageView goschedual0; // 임시 캘린더로 넘어감
@@ -259,53 +291,177 @@ public class Counselorfind1 extends Activity implements OnClickListener {
 
         switch (v.getId()) {
             case R.id.keyword2:
-                Intent intent = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent);
+                if( i2 == 0 ){
+                    keyword2.setImageResource(R.drawable.keyword_2);
+                    i2=1;
+                }
+                else{
+                    keyword2.setImageResource(R.drawable.keyword2);
+                    i2=0;
+                }
                 break;
             case R.id.keyword3:
-                Intent intent1 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent1);
+                if( i3 == 0 ){
+                    keyword3.setImageResource(R.drawable.keyword_3);
+                    i3=1;
+                }
+                else{
+                    keyword3.setImageResource(R.drawable.keyword3);
+                    i3=0;
+                }
                 break;
             case R.id.keyword4:
-                Intent intent2 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent2);
+                if( i4 == 0 ){
+                    keyword4.setImageResource(R.drawable.keyword_4);
+                    i4=1;
+                }
+                else{
+                    keyword4.setImageResource(R.drawable.keyword4);
+                    i4=0;
+                }
                 break;
             case R.id.keyword5:
-                Intent intent3 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent3);
+                if( i5 == 0 ){
+                    keyword5.setImageResource(R.drawable.keyword_5);
+                    i5=1;
+                }
+                else{
+                    keyword5.setImageResource(R.drawable.keyword5);
+                    i5=0;
+                }
                 break;
             case R.id.keyword6:
-                Intent intent4 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent4);
+                if( i6 == 0 ){
+                    keyword6.setImageResource(R.drawable.keyword_6);
+                    i6=1;
+                }
+                else{
+                    keyword6.setImageResource(R.drawable.keyword6);
+                    i6=0;
+                }
                 break;
             case R.id.keyword7:
-                Intent intent5 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent5);
+                if( i7 == 0 ){
+                    keyword7.setImageResource(R.drawable.keyword_7);
+                    i7=1;
+                }
+                else{
+                    keyword7.setImageResource(R.drawable.keyword7);
+                    i7=0;
+                }
                 break;
             case R.id.keyword8:
-                Intent intent6 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent6);
+                if( i8 == 0 ){
+                    keyword8.setImageResource(R.drawable.keyword_8);
+                    i8=1;
+                }
+                else{
+                    keyword8.setImageResource(R.drawable.keyword8);
+                    i8=0;
+                }
                 break;
             case R.id.keyword9:
-                Intent intent7 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent7);
+                if( i9 == 0 ){
+                    keyword9.setImageResource(R.drawable.keyword_9);
+                    i9=1;
+                }
+                else{
+                    keyword9.setImageResource(R.drawable.keyword9);
+                    i9=0;
+                }
                 break;
             case R.id.keyword10:
-                Intent intent8 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent8);
+                if( i10 == 0 ){
+                    keyword10.setImageResource(R.drawable.keyword_10);
+                    i10=1;
+                }
+                else{
+                    keyword10.setImageResource(R.drawable.keyword10);
+                    i10=0;
+                }
                 break;
             case R.id.keyword11:
-                Intent intent9 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent9);
+                if( i11 == 0 ){
+                    keyword11.setImageResource(R.drawable.keyword_11);
+                    i11=1;
+                }
+                else{
+                    keyword11.setImageResource(R.drawable.keyword11);
+                    i11=0;
+                }
                 break;
             case R.id.keyword12:
-                Intent intent10 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent10);
+                if( i12 == 0 ){
+                    keyword12.setImageResource(R.drawable.keyword_12);
+                    i12=1;
+                }
+                else{
+                    keyword12.setImageResource(R.drawable.keyword12);
+                    i12=0;
+                }
                 break;
             case R.id.keyword13:
-                Intent intent11 = new Intent(getApplicationContext(), Counselorfind1_2.class);
-                startActivity(intent11);
+                if( i13 == 0 ){
+                    keyword13.setImageResource(R.drawable.keyword_13);
+                    i13=1;
+                }
+                else{
+                    keyword13.setImageResource(R.drawable.keyword13);
+                    i13=0;
+                }
                 break;
+            case R.id.keyword14:
+                if( i14 == 0 ){
+                    keyword14.setImageResource(R.drawable.keyword_14);
+                    i14=1;
+                }
+                else{
+                    keyword14.setImageResource(R.drawable.keyword14);
+                    i14=0;
+                }
+                break;
+            case R.id.keyword15:
+                if( i15 == 0 ){
+                    keyword15.setImageResource(R.drawable.keyword_15);
+                    i15=1;
+                }
+                else{
+                    keyword15.setImageResource(R.drawable.keyword15);
+                    i15=0;
+                }
+                break;
+            case R.id.keyword16:
+                if( i16 == 0 ){
+                    keyword16.setImageResource(R.drawable.keyword_16);
+                    i16=1;
+                }
+                else{
+                    keyword16.setImageResource(R.drawable.keyword16);
+                    i16=0;
+                }
+                break;
+            case R.id.keyword17:
+                if( i17 == 0 ){
+                    keyword17.setImageResource(R.drawable.keyword_17);
+                    i17=1;
+                }
+                else{
+                    keyword17.setImageResource(R.drawable.keyword17);
+                    i17=0;
+                }
+                break;
+            case R.id.keyword18:
+                if( i18 == 0 ){
+                    keyword18.setImageResource(R.drawable.keyword_18);
+                    i18=1;
+                }
+                else{
+                    keyword18.setImageResource(R.drawable.keyword18);
+                    i18=0;
+                }
+                break;
+
+
             case R.id.menu:         // 메뉴 이미지를 눌렀을때
                 menuLeftSlideAnimationToggle(); //이 메소드 호출
                 break;
@@ -317,6 +473,13 @@ public class Counselorfind1 extends Activity implements OnClickListener {
                     startActivity(intent0);
                     finish();
                 }
+                break;
+
+            case R.id.find1btn:
+                Intent intent0 = new Intent(getApplicationContext(), Counselorfind2.class);
+
+                startActivity(intent0);
+                finish();
                 break;
         }
     }

@@ -39,7 +39,7 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
     private ImageView menu1; // 메뉴 이미지 슬라이드 열리는 메뉴 이미지
     ImageView moon1, moon2, s1 , find2_home;
-    ImageView Counselor1,Counselor2,Counselor_reserve1,Counselor_reserve2;
+    ImageView Counselor1,Counselor2,Counselor_reserve1,Counselor_reserve2 , box1,box2;
      int i =0;
 
     //
@@ -66,7 +66,9 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
         // 상담원 프로필
         Counselor1 = (ImageView) findViewById(R.id.counselor1);
+        box1 = (ImageView) findViewById(R.id.box1);
         Counselor2 = (ImageView) findViewById(R.id.counselor2);
+        box2 = (ImageView) findViewById(R.id.box2);
 
         // 상담원 예약하기
         Counselor_reserve1 = (ImageView) findViewById(R.id.counselor_reserve1);
@@ -122,7 +124,29 @@ public class Counselorfind2 extends Activity implements OnClickListener {
             }
         });
 
+        box1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { //
+
+                Intent intent = new Intent(getApplicationContext(), Counselor_profile.class);
+
+                startActivity(intent);
+                finish();
+            }
+        });
+
         Counselor2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { // > button
+
+                Intent intent = new Intent(getApplicationContext(), Counselor_profile.class);
+
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        box2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // > button
 
@@ -186,7 +210,17 @@ public class Counselorfind2 extends Activity implements OnClickListener {
 
 
 
+        ImageView go; // find1_2로넘어감 ( 상담예약 )
+        go = (ImageView) findViewById(R.id.gofind1_2);
+        go.setOnClickListener(new View.OnClickListener() { // 로그인페이지로 이동
+            @Override
+            public void onClick(View v) {
 
+                Intent intent11 = new Intent(getApplicationContext(), Counselorfind1_2.class);
+
+                startActivity(intent11);
+            }
+        });
 
         ImageView goschedual0; // 임시 캘린더로 넘어감
         //임시 캘린더로 넘어감

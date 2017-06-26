@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="0dp"
-            android:background="@drawable/homebg"
+            android:background="#ffffff"
             android:gravity="left"
             android:orientation="vertical" >
 
@@ -55,12 +55,21 @@
 
 
 
+                <!-- top -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="41.8dp"
+                    android:background="#2f438e">
+
+                </LinearLayout>
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="22dp"
-                    android:src="@drawable/menu"
+                    android:layout_marginTop="10.8dp"
+                    android:src="@drawable/menu1"
                     android:text="menu"
                     android:id="@+id/menu" />
 
@@ -68,11 +77,14 @@
                 <ImageView
                     android:layout_width="88dp"
                     android:layout_height="19dp"
-                    android:layout_marginLeft="136dp"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginTop="10.8dp"
                     android:src="@drawable/m"
 
                     />
+
+                <!-- top end -->
+
 
 
                 <FrameLayout
@@ -125,6 +137,15 @@
 
         </LinearLayout>
 
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="56.5dp"
+            android:src="@drawable/bottomline"
+            />
+
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -150,15 +171,14 @@
                     android:id="@+id/counselorfind"
                     />
 
-
                 <ImageView
                     android:layout_width="46dp"
                     android:layout_height="41dp"
                     android:layout_gravity="right"
                     android:layout_marginRight="19.5dp"
                     android:src="@drawable/home_2"
+                    android:id="@+id/gofind1_2"
                     />
-
 
             </FrameLayout>
 
@@ -169,29 +189,25 @@
                 android:layout_weight="1"
                 >
 
-            <ImageView
-                android:layout_width="46dp"
-                android:layout_height="41dp"
-                android:layout_gravity="left"
-                android:layout_marginLeft="19.5dp"
-                android:src="@drawable/home_3"
-                android:id="@+id/go0"
-                />
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="19.5dp"
+                    android:src="@drawable/home_3"
+                    android:id="@+id/go0"
+                    />
 
-            <ImageView
-                android:layout_width="46dp"
-                android:layout_height="41dp"
-                android:layout_gravity="right"
-                android:layout_marginRight="24.5dp"
-                android:src="@drawable/home_4"
-                />
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="41dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="24.5dp"
+                    android:src="@drawable/home_4"
+                    />
 
             </FrameLayout>
         </LinearLayout>
-
-
-
-
 
 
 

@@ -64,14 +64,6 @@
                 />
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="201dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="540dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/agreetext"
-        />
-
     </FrameLayout>
 
 </LinearLayout>
